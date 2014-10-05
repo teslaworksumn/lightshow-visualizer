@@ -8,19 +8,19 @@ class ListenerThread extends Thread {
 	VizTailListener listener;
 	String filename;
 	
-	public ListenerThread(String filename, VizFrame frame) {
-        listener = new VizTailListener(frame);
+	final int DELAY = 25;
+	
+	public ListenerThread(String filename, int[] channelValues, VizFrame frame) {
+        this.listener = new VizTailListener(channelValues, frame);
         this.filename = filename;
 	}
 	
 	@Override
 	public void run() {
-		Tailer tailer = Tailer.create(
-        		new File(filename),
-        		listener, 0, true);
+		Tailer tailer = Tailer.create(new File(filename), listener, DELAY, true);
         while (true) {
             try {
-				Thread.sleep(0);
+				Thread.sleep(DELAY);
 			} catch (InterruptedException e) {
 			}
         }

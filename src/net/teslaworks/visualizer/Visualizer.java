@@ -12,27 +12,20 @@ import org.dom4j.Document;
 
 public class Visualizer {
 
-	public static String targetFilename;
-
     public static void main(String[] args) throws Exception {
     	
     	ConfigXMLParser parser = new ConfigXMLParser();
     	Document config = parser.parseConfig("config/samplecfg.xml");
-    	targetFilename = parser.parseTargetFilename(config);
+    	final String targetFilename = parser.parseTargetFilename(config);
+    	// TODO Read size from config document.
     	
-    	List<Rectangle> rects = parser.parseRectangles(config);
-    	for (Rectangle rect : rects) {
-    		System.out.println(rect);
-    	}
+    	final List<Rectangle> rects = parser.parseRectangles(config);
     	
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                VizFrame frame = new VizFrame();
+                VizFrame frame = new VizFrame(targetFilename, rects);
                 frame.setVisible(true);
-                
-                ListenerThread lt = new ListenerThread("/Users/rjayatilleka/k.txt", frame);
-                lt.start();
             }
         });
         

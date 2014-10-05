@@ -7,6 +7,10 @@ import java.awt.EventQueue;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Insets;
+import java.awt.RenderingHints;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
 import javax.swing.JFrame;
@@ -14,30 +18,34 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import javax.swing.border.EmptyBorder;
 
+import net.teslaworks.visualizer.shapes.Rectangle;
+import net.teslaworks.visualizer.shapes.Shape;
+
 class Surface extends JPanel {
+	
+	List<Shape> shapes;
+	int[] channelValues;
+	
+	public Surface(int[] channelValues, List<Rectangle> rects) {
+		this.channelValues = channelValues;
+		shapes = new ArrayList<>();
+		for (Rectangle rect : rects) {
+			shapes.add((Shape) rect);
+		}
+	}
 
     private void doDrawing(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
-        g2d.drawString("Java 2D", 50, 50);g2d.setColor(Color.blue);
 
-        Dimension size = getSize();
-        Insets insets = getInsets();
-
-        int w = size.width - insets.left - insets.right;
-        int h = size.height - insets.top - insets.bottom;
-
-        Random r = new Random();
-
-        for (int i = 0; i < 1000; i++) {
-
-            int x = Math.abs(r.nextInt()) % w;
-            int y = Math.abs(r.nextInt()) % h;
-            g2d.drawLine(x, y, x, y);
+        RenderingHints rh = new RenderingHints(RenderingHints.KEY_ANTIALIASING,
+                RenderingHints.VALUE_ANTIALIAS_ON);
+        rh.put(RenderingHints.KEY_RENDERING,
+               RenderingHints.VALUE_RENDER_QUALITY);
+        
+        for (int i = 0; i < channelValues.length; i++) {
+        	shapes.get(i).paint(g2d, channelValues[i]);
         }
-        g2d.drawLine(30, 30, 200, 30);
-        g2d.drawLine(200, 30, 30, 200);
-        g2d.drawLine(30, 200, 200, 200);
-        g2d.drawLine(200, 200, 30, 30);
+        
     }
 
     @Override
@@ -49,22 +57,21 @@ class Surface extends JPanel {
 
 public class VizFrame extends JFrame {
 
-    public VizFrame() {
-        setTitle("Simple Java 2D example");
-        setSize(300, 300);
+    public VizFrame(String target, List<Rectangle> rects) {
+    	init();
 
-        add(new Surface());
+    	int channelCount = rects.size();
+    	int[] channelValues = new int[channelCount];
+        add(new Surface(channelValues, rects));
+    	
+        ListenerThread lt = new ListenerThread(target, channelValues, this);
+        lt.start();
+    }
+    
+    private void init() {
+        setTitle("Simple Java 2D example");
+        setSize(800, 240);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-    }
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                VizFrame frame = new VizFrame();
-                frame.setVisible(true);
-            }
-        });
     }
 }

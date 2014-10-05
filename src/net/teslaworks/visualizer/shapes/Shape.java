@@ -1,5 +1,8 @@
 package net.teslaworks.visualizer.shapes;
 
+import java.awt.Color;
+import java.awt.Graphics2D;
+
 public abstract class Shape {
 	
 	// Position
@@ -20,4 +23,6 @@ public abstract class Shape {
 		this.name = name;
 		this.channel = channel;
 	}
+	
+    public abstract void paint(Graphics2D g2d, int channelValue);
 }

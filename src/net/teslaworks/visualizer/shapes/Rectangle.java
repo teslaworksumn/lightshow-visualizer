@@ -1,5 +1,8 @@
 package net.teslaworks.visualizer.shapes;
 
+import java.awt.Color;
+import java.awt.Graphics2D;
+
 import net.teslaworks.visualizer.ConfigXMLParser;
 
 import org.dom4j.Element;
@@ -37,5 +40,9 @@ public class Rectangle extends Shape {
 			return result + " false";
 		}
 	}
-	
+
+    public void paint(Graphics2D g2d, int channelValue) {
+    	g2d.setColor(new Color(color[0], color[1], color[2], channelValue));
+    	g2d.fillRect(x, y, width, height);
+    }
 }
