@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<vixenlights_viz>
+	<metadata>
+        <version>0.1.a</version>
+    </metadata>
+	<preferences>
+		<!-- Change the value of debug to get more information from the console.  Higher number = more info -->
+		<debug>2</debug>
+		<!-- disableOScheck is a boolean value (true/false, yes/no, 0/1).  Only mess with it if you know what you are doing -->
+		<disableOScheck>false</disableOScheck>
+	</preferences>
+	<default_config>
+		<vltarget>C:\\Program Files (x86)\\Vixen\\Vixen 2.1.1.0\\Profiles\\16ch_DMX.log</vltarget>
+		<size></size>
+	</default_config>
+</vixenlights_viz>
