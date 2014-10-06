@@ -13,22 +13,14 @@ import org.dom4j.Document;
 public class Visualizer {
 
     public static void main(String[] args) throws Exception {
-    	
-    	ConfigXMLParser parser = new ConfigXMLParser();
-    	Document config = parser.parseConfig("config/samplecfg.xml");
-    	final String targetFilename = parser.parseTargetFilename(config);
-    	// TODO Read size from config document.
-    	
-    	final List<Rectangle> rects = parser.parseRectangles(config);
+    	final ConfigXML config = new ConfigXML("config/samplecfg.xml");
     	
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                VizFrame frame = new VizFrame(targetFilename, rects);
+                VizFrame frame = new VizFrame(config);
                 frame.setVisible(true);
             }
         });
-        
-        
     }
 }

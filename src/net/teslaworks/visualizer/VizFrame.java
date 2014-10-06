@@ -26,12 +26,9 @@ class Surface extends JPanel {
 	List<Shape> shapes;
 	int[] channelValues;
 	
-	public Surface(int[] channelValues, List<Rectangle> rects) {
+	public Surface(int[] channelValues, List<Shape> shapes) {
 		this.channelValues = channelValues;
-		shapes = new ArrayList<>();
-		for (Rectangle rect : rects) {
-			shapes.add((Shape) rect);
-		}
+		this.shapes = shapes;
 	}
 
     private void doDrawing(Graphics g) {
@@ -42,10 +39,9 @@ class Surface extends JPanel {
         rh.put(RenderingHints.KEY_RENDERING,
                RenderingHints.VALUE_RENDER_QUALITY);
         
-        for (int i = 0; i < channelValues.length; i++) {
-        	shapes.get(i).paint(g2d, channelValues[i]);
+        for (Shape shape : shapes) {
+        	shape.paint(g2d, channelValues[shape.channel]);
         }
-        
     }
 
     @Override
@@ -57,20 +53,19 @@ class Surface extends JPanel {
 
 public class VizFrame extends JFrame {
 
-    public VizFrame(String target, List<Rectangle> rects) {
-    	init();
-
-    	int channelCount = rects.size();
-    	int[] channelValues = new int[channelCount];
-        add(new Surface(channelValues, rects));
+    public VizFrame(ConfigXML config) {
+    	init(config.width, config.height);
     	
-        ListenerThread lt = new ListenerThread(target, channelValues, this);
+    	int[] channelValues = new int[config.channelCount];
+        add(new Surface(channelValues, config.shapes));
+
+        ListenerThread lt = new ListenerThread(config.targetFilename, channelValues, this);
         lt.start();
     }
     
-    private void init() {
-        setTitle("Simple Java 2D example");
-        setSize(800, 240);
+    private void init(int width, int height) {
+        setTitle("Tesla Works DMX Visualizer");
+        setSize(width, height);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
     }
