@@ -4,21 +4,21 @@
 	<vltarget>/Users/rjayatilleka/Light Show/Event Data Logger/cse_ls_1b.log</vltarget>
     <channels count="16"/>
 	<elements>
-		<shape type="rect" name="Channel 0" x="10" y="10" width="80" height="80" red="255" blue="255" green="255" mode="fill" channel="0" />
-		<shape type="rect" name="Channel 1" x="100" y="10" width="80" height="80" red="0" blue="255" green="0" mode="fill" channel="1" />
-		<shape type="rect" name="Channel 2" x="190" y="10" width="80" height="80" red="255" blue="128" green="0" mode="fill" channel="2" />
-		<shape type="rect" name="Channel 3" x="280" y="10" width="80" height="80" red="255" blue="0" green="0" mode="fill" channel="3" />
-		<shape type="rect" name="Channel 4" x="370" y="10" width="80" height="80" red="0" blue="255" green="255" mode="fill" channel="4" />
-		<shape type="rect" name="Channel 5" x="460" y="10" width="80" height="80" red="255" blue="0" green="255" mode="fill" channel="5" />
-		<shape type="rect" name="Channel 6" x="550" y="10" width="80" height="80" red="0" blue="187" green="0" mode="fill" channel="6" />
-		<shape type="rect" name="Channel 7" x="640" y="10" width="80" height="80" red="255" blue="255" green="0" mode="fill" channel="7" />
-		<shape type="rect" name="Channel 8" x="10" y="100" width="80" height="80" red="255" blue="255" green="255" mode="fill" channel="8" />
-		<shape type="rect" name="Channel 9" x="100" y="100" width="80" height="80" red="0" blue="255" green="0" mode="fill" channel="9" />
-		<shape type="rect" name="Channel 10" x="190" y="100" width="80" height="80" red="255" blue="128" green="0" mode="fill" channel="10" />
-		<shape type="rect" name="Channel 11" x="280" y="100" width="80" height="80" red="255" blue="0" green="0" mode="fill" channel="11" />
-		<shape type="rect" name="Channel 12" x="370" y="100" width="80" height="80" red="0" blue="255" green="255" mode="fill" channel="12" />
-		<shape type="rect" name="Channel 13" x="460" y="100" width="80" height="80" red="255" blue="0" green="255" mode="fill" channel="13" />
-		<shape type="rect" name="Channel 14" x="550" y="100" width="80" height="80" red="0" blue="187" green="0" mode="fill" channel="14" />
-		<shape type="rect" name="Channel 15" x="640" y="100" width="80" height="80" red="255" blue="255" green="0" mode="fill" channel="15" />
+		<shape type="rect" name="Channel 0" x="10" y="10" width="80" height="80" red="255" green="255" blue="255" mode="fill" channel="0" />
+		<shape type="rect" name="Channel 1" x="100" y="10" width="80" height="80" red="0" green="255" blue="0" mode="fill" channel="1" />
+		<shape type="rect" name="Channel 2" x="190" y="10" width="80" height="80" red="255" green="128" blue="0" mode="fill" channel="2" />
+		<shape type="rect" name="Channel 3" x="280" y="10" width="80" height="80" red="255" green="0" blue="0" mode="fill" channel="3" />
+		<shape type="rect" name="Channel 4" x="370" y="10" width="80" height="80" red="0" green="255" blue="255" mode="fill" channel="4" />
+		<shape type="rect" name="Channel 5" x="460" y="10" width="80" height="80" red="255" green="0" blue="255" mode="fill" channel="5" />
+		<shape type="rect" name="Channel 6" x="550" y="10" width="80" height="80" red="0" green="187" blue="0" mode="fill" channel="6" />
+		<shape type="rect" name="Channel 7" x="640" y="10" width="80" height="80" red="255" green="255" blue="0" mode="fill" channel="7" />
+		<shape type="rect" name="Channel 8" x="10" y="100" width="80" height="80" red="255" green="255" blue="255" mode="fill" channel="8" />
+		<shape type="rect" name="Channel 9" x="100" y="100" width="80" height="80" red="0" green="255" blue="0" mode="fill" channel="9" />
+		<shape type="rect" name="Channel 10" x="190" y="100" width="80" height="80" red="255" green="128" blue="0" mode="fill" channel="10" />
+		<shape type="rect" name="Channel 11" x="280" y="100" width="80" height="80" red="255" green="0" blue="0" mode="fill" channel="11" />
+		<shape type="rect" name="Channel 12" x="370" y="100" width="80" height="80" red="0" green="255" blue="255" mode="fill" channel="12" />
+		<shape type="rect" name="Channel 13" x="460" y="100" width="80" height="80" red="255" green="0" blue="255" mode="fill" channel="13" />
+		<shape type="rect" name="Channel 14" x="550" y="100" width="80" height="80" red="0" green="187" blue="0" mode="fill" channel="14" />
+		<shape type="rect" name="Channel 15" x="640" y="100" width="80" height="80" red="255" green="255" blue="0" mode="fill" channel="15" />
 	</elements>
 </vixenlights_viz_cfg>

@@ -10,46 +10,46 @@ public abstract class Shape {
 	// DMX
 	public final String name;
 	public final int channel;
-	
+
 	// Position
 	public final int x;
 	public final int y;
-	
+
 	// Color
 	public final int red;
 	public final int blue;
 	public final int green;
-	
-	// Make a new shape from a <shape> tag in config
+
+	// Make a new shape from a <shape> tag in configuration
 	public static Shape makeShape(Element e) {
 		// Switch based on "type" attribute in tag.
 		String type = e.attributeValue("type");
-		switch(type) {
+		switch (type) {
 		case "rect":
 			return new Rectangle(e);
 		}
 		throw new IllegalArgumentException("Unknown shape type: " + e.asXML());
 	}
-	
+
 	// Set values common to all shapes
 	protected Shape(Element e) {
-    	name = e.attributeValue("name");
-    	channel = Integer.parseInt(e.attributeValue("channel"));
-    	
-    	x = Integer.parseInt(e.attributeValue("x"));
-    	y = Integer.parseInt(e.attributeValue("y"));
-    	
-    	red = Integer.parseInt(e.attributeValue("red"));
-    	blue = Integer.parseInt(e.attributeValue("blue"));
-    	green = Integer.parseInt(e.attributeValue("green"));
+		name = e.attributeValue("name");
+		channel = Integer.parseInt(e.attributeValue("channel"));
+
+		x = Integer.parseInt(e.attributeValue("x"));
+		y = Integer.parseInt(e.attributeValue("y"));
+
+		red = Integer.parseInt(e.attributeValue("red"));
+		blue = Integer.parseInt(e.attributeValue("blue"));
+		green = Integer.parseInt(e.attributeValue("green"));
 	}
-	
+
 	public String toString() {
 		return name + " @channel " + channel;
 	}
-	
+
 	// Draw this shape to the graphics2d instance
-    public void paint(Graphics2D g2d, int channelValue) {
-    	g2d.setColor(new Color(red, green, blue, channelValue));
-    }
+	public void paint(Graphics2D g2d, int channelValue) {
+		g2d.setColor(new Color(red, green, blue, channelValue));
+	}
 }
