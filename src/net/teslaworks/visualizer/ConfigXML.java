@@ -17,37 +17,37 @@ import net.teslaworks.visualizer.shapes.Shape;
 
 public class ConfigXML {
 
-	// Constants representing data from config file
-	final public String targetFilename;
-	final public int channelCount;
-	final public int width, height;
-	final public List<Shape> shapes;
+    // Constants representing data from config file
+    final public String targetFilename;
+    final public int channelCount;
+    final public int width, height;
+    final public List<Shape> shapes;
 
-	// Given config filename, parses all relevant data and stores it
-	public ConfigXML(String configFilename) throws DocumentException {
-		Document config = new SAXReader().read(new File(configFilename));
+    // Given config filename, parses all relevant data and stores it
+    public ConfigXML(String configFilename) throws DocumentException {
+        Document config = new SAXReader().read(new File(configFilename));
 
-		// Target filename to read from
-		targetFilename = config
-				.selectSingleNode("/vixenlights_viz_cfg/vltarget").getText();
+        // Target filename to read from
+        targetFilename = config
+                .selectSingleNode("/vixenlights_viz_cfg/vltarget").getText();
 
-		// Channel count
-		Element channels = (Element) config
-				.selectSingleNode("/vixenlights_viz_cfg/channels");
-		channelCount = Integer.parseInt(channels.attributeValue("count"));
+        // Channel count
+        Element channels = (Element) config
+                .selectSingleNode("/vixenlights_viz_cfg/channels");
+        channelCount = Integer.parseInt(channels.attributeValue("count"));
 
-		// Window size
-		Element sizeElement = (Element) config
-				.selectSingleNode("/vixenlights_viz_cfg/size");
-		width = Integer.parseInt(sizeElement.attributeValue("width"));
-		height = Integer.parseInt(sizeElement.attributeValue("height"));
+        // Window size
+        Element sizeElement = (Element) config
+                .selectSingleNode("/vixenlights_viz_cfg/size");
+        width = Integer.parseInt(sizeElement.attributeValue("width"));
+        height = Integer.parseInt(sizeElement.attributeValue("height"));
 
-		// All the shapes to render
-		List<Node> shapeNodes = config
-				.selectNodes("/vixenlights_viz_cfg/elements/shape");
-		shapes = new ArrayList<>();
-		for (Node n : shapeNodes) {
-			shapes.add(Shape.makeShape((Element) n));
-		}
-	}
+        // All the shapes to render
+        List<Node> shapeNodes = config
+                .selectNodes("/vixenlights_viz_cfg/elements/shape");
+        shapes = new ArrayList<>();
+        for (Node n : shapeNodes) {
+            shapes.add(Shape.makeShape((Element) n));
+        }
+    }
 }
