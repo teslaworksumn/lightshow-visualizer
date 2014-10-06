@@ -14,15 +14,17 @@ public class Rectangle extends Shape {
 	public final int height;
 	public final boolean fillMode;
 	
-	public Rectangle(Element e) {
+	// Set values unique to rectangles
+	protected Rectangle(Element e) {
 		super(e);
         width = Integer.parseInt(e.attributeValue("width"));
         height = Integer.parseInt(e.attributeValue("height"));
         fillMode = "fill".equals(e.attributeValue("mode"));
 	}
 
+	// Draw this rectangle
     public void paint(Graphics2D g2d, int channelValue) {
-    	g2d.setColor(new Color(red, blue, green, channelValue));
+    	super.paint(g2d, channelValue);
     	g2d.fillRect(x, y, width, height);
     }
 }

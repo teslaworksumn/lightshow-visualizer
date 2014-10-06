@@ -17,6 +17,7 @@ import net.teslaworks.visualizer.shapes.Shape;
 
 public class ConfigXML {
 	
+	// Constants representing data from config file
 	final public String targetFilename;
 	final public int channelCount;
 	final public int width, height;

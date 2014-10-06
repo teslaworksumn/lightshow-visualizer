@@ -20,7 +20,9 @@ public abstract class Shape {
 	public final int blue;
 	public final int green;
 	
+	// Make a new shape from a <shape> tag in config
 	public static Shape makeShape(Element e) {
+		// Switch based on "type" attribute in tag.
 		String type = e.attributeValue("type");
 		switch(type) {
 		case "rect":
@@ -29,7 +31,8 @@ public abstract class Shape {
 		throw new IllegalArgumentException("Unknown shape type: " + e.asXML());
 	}
 	
-	public Shape(Element e) {
+	// Set values common to all shapes
+	protected Shape(Element e) {
     	name = e.attributeValue("name");
     	channel = Integer.parseInt(e.attributeValue("channel"));
     	
@@ -45,5 +48,8 @@ public abstract class Shape {
 		return name + " @channel " + channel;
 	}
 	
-    public abstract void paint(Graphics2D g2d, int channelValue);
+	// Draw this shape to the graphics2d instance
+    public void paint(Graphics2D g2d, int channelValue) {
+    	g2d.setColor(new Color(red, green, blue, channelValue));
+    }
 }

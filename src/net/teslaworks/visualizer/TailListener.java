@@ -2,17 +2,17 @@ package net.teslaworks.visualizer;
 
 import org.apache.commons.io.input.TailerListenerAdapter;
 
-public class VizTailListener extends TailerListenerAdapter{
+public class TailListener extends TailerListenerAdapter{
 	
 	private int[] channelValues;
 	private VizFrame frame;
 	
-	public VizTailListener(int[] channelValues, VizFrame frame) {
+	public TailListener(int[] channelValues, VizFrame frame) {
 		this.channelValues = channelValues;
 		this.frame = frame;
 	}
 	
-    @Override
+    // For each line, load into buffer and repaint frame.
     public void handle(String line) {
         String[] splits = line.substring(30).split(" ");
         for (int i = 0; i < channelValues.length; i++) {
