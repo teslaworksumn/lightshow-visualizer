@@ -11,9 +11,11 @@ import org.apache.commons.io.input.TailerListenerAdapter;
 import org.dom4j.Document;
 
 public class Visualizer {
+	
+	private static final String CONFIG_FILENAME = "config/samplecfg.xml";
 
     public static void main(String[] args) throws Exception {
-    	final ConfigXML config = new ConfigXML("config/samplecfg.xml");
+    	final ConfigXML config = new ConfigXML(CONFIG_FILENAME);
     	
         SwingUtilities.invokeLater(new Runnable() {
             @Override

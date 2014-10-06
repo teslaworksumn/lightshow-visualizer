@@ -6,18 +6,17 @@ import org.apache.commons.io.input.Tailer;
 
 class ListenerThread extends Thread {
 	VizTailListener listener;
-	String filename;
+	String targetFilename;
 	
 	final int DELAY = 25;
 	
 	public ListenerThread(String filename, int[] channelValues, VizFrame frame) {
         this.listener = new VizTailListener(channelValues, frame);
-        this.filename = filename;
+        this.targetFilename = filename;
 	}
 	
-	@Override
 	public void run() {
-		Tailer tailer = Tailer.create(new File(filename), listener, DELAY, true);
+		Tailer.create(new File(targetFilename), listener, DELAY, true);
         while (true) {
             try {
 				Thread.sleep(DELAY);

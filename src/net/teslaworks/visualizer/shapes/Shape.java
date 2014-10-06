@@ -42,7 +42,7 @@ public abstract class Shape {
 	}
 	
 	public String toString() {
-		return name;
+		return name + " @channel " + channel;
 	}
 	
     public abstract void paint(Graphics2D g2d, int channelValue);
