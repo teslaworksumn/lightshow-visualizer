@@ -13,7 +13,7 @@ import org.dom4j.Document;
 public class Visualizer {
 
     // Filename to read configuration data from.
-    private static final String CONFIG_FILENAME = "config/samplecfg.xml";
+    private static final String CONFIG_FILENAME = "/samplecfg.xml";
 
     public static void main(String[] args) throws Exception {
         // ConfigXML has constants with all config data after parse

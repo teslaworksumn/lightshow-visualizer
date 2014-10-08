@@ -1,6 +1,7 @@
 package net.teslaworks.visualizer;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -24,8 +25,10 @@ public class ConfigXML {
     final public List<Shape> shapes;
 
     // Given config filename, parses all relevant data and stores it
-    public ConfigXML(String configFilename) throws DocumentException {
-        Document config = new SAXReader().read(new File(configFilename));
+    public ConfigXML(String configFilename)
+            throws DocumentException, IOException {
+        URL configURL = getClass().getResource(configFilename);
+        Document config = new SAXReader().read(configURL);;
 
         // Target filename to read from
         targetFilename = config
