@@ -35,13 +35,9 @@ This software was written using Eclipse Standard IDE version 4.4.0 (Luna).  You 
 
 We used a couple of machines for testing and debugging.  This has run successfully on all of the following machines, and takes up limited system resources even on the least powerful of these machines
 
-|------------------------|--------------------------|------|------------------------------------|-----------------------|--------------------|
-| Model                  | Processor                | RAM  | Graphics                           | OS                    | Java Version       |
-|------------------------|--------------------------|------|------------------------------------|-----------------------|--------------------|
-| Dell Latitude E6420    | Core i7-2720QM @ 2.20GHz | 8GB  | Intel HD 3000 + NVIDIA NVS 4200    | Windows 7 Enterprise  | Java 1.7 Update 67 |
-|------------------------|--------------------------|------|------------------------------------|-----------------------|--------------------|
-| 13" Macbook Pro        | Intel Core2Duo @ 2.26GHz | 8GB  | NVIDIA GeForce 9400M               | Mac OS X 10.10 beta 5 | Java 1.8 Update 20 |
-| (Mid-2009: 5,5)        |                          |      |                                    |                       |                    |
-|------------------------|--------------------------|------|------------------------------------|-----------------------|--------------------|
-| 13" Macbook Pro Retina | Intel Core i-series      |      | Intel HD Graphics                  | Mac OS X 10.9         |                    |
-|------------------------|--------------------------|------|------------------------------------|-----------------------|--------------------|
+
+| Model						| Processor					| RAM	| Graphics							| OS					| Java Version			|
+|------------				|----------					|-----	|----------							|----					|--------------			|
+| Dell Latitude E6420		| Core i7-2720QM @ 2.20GHz	| 8GB	| Intel HD 3000 + NVIDIA NVS 4200	| Windows 7 Enterprise	| Java 1.7 Update 67	|
+| 13" Macbook Pro Mid-2009	| Intel Core2Duo @ 2.26GHz	| 8GB	| NVIDIA GeForce 9400M				| Mac OS X 10.10 beta 5	| Java 1.8 Update 20	|
+| 13" Macbook Pro Retina	| Intel Core i-series		| 		| Intel HD Graphics					| Mac OS X 10.9			| 						|
