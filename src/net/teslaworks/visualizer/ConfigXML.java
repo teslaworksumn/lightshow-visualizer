@@ -1,5 +1,6 @@
 package net.teslaworks.visualizer;
 
+import java.awt.Color;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -22,6 +23,7 @@ public class ConfigXML {
     final public String targetFilename;
     final public int channelCount;
     final public int width, height;
+    final public Color background;
     final public List<Shape> shapes;
 
     // Given config filename, parses all relevant data and stores it
@@ -39,11 +41,17 @@ public class ConfigXML {
                 .selectSingleNode("/vixenlights_viz_cfg/channels");
         channelCount = Integer.parseInt(channels.attributeValue("count"));
 
-        // Window size
+        // Window size and color
         Element sizeElement = (Element) config
                 .selectSingleNode("/vixenlights_viz_cfg/size");
         width = Integer.parseInt(sizeElement.attributeValue("width"));
         height = Integer.parseInt(sizeElement.attributeValue("height"));
+        Element bgElement = (Element) config
+        		.selectSingleNode("/vixenlights_viz_cfg/background");
+        int bgRed = Integer.parseInt(bgElement.attributeValue("red"));
+        int bgGreen = Integer.parseInt(bgElement.attributeValue("green"));
+        int bgBlue = Integer.parseInt(bgElement.attributeValue("blue"));
+        background = new Color(bgRed, bgGreen, bgBlue);
 
         // All the shapes to render
         List<Node> shapeNodes = config

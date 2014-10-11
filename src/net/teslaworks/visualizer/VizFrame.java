@@ -26,7 +26,7 @@ public class VizFrame extends JFrame {
         int[] channelValues = new int[config.channelCount];
 
         // Make the panel we draw to.
-        add(new DisplayPanel(channelValues, config.shapes));
+        add(new DisplayPanel(channelValues, config.shapes, config.background));
 
         // Thread to read from file and repaint frame.
         TailListenerThread lt = new TailListenerThread(

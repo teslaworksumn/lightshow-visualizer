@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <vixenlights_viz_cfg>
     <size width="800" height="240"/>
-	<vltarget>/Users/rjayatilleka/Light Show/Event Data Logger/cse_ls_1b.log</vltarget>
+	<vltarget>/Light Show/Event Data Logger/cse_ls_1b.log</vltarget>
     <channels count="16"/>
+    <background red="75" green="75" blue="75" />
 	<elements>
 		<shape type="rect" name="Channel 0" x="10" y="10" width="80" height="80" red="255" green="255" blue="255" mode="fill" channel="0" />
 		<shape type="rect" name="Channel 1" x="100" y="10" width="80" height="80" red="0" green="255" blue="0" mode="fill" channel="1" />
