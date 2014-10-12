@@ -3,7 +3,7 @@ package net.teslaworks.visualizer.shapes;
 import java.awt.Color;
 import java.awt.Graphics2D;
 
-import net.teslaworks.visualizer.ConfigXML;
+import net.teslaworks.visualizer.LayoutXML;
 
 import org.dom4j.Element;
 

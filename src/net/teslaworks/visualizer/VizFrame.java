@@ -19,18 +19,15 @@ import net.teslaworks.visualizer.shapes.Rectangle;
 public class VizFrame extends JFrame {
 
     // Make the frame with specified configuration
-    public VizFrame(ConfigXML config) {
-        init(config.width, config.height);
-
-        // This is where data will be read to from the file
-        int[] channelValues = new int[config.channelCount];
+    public VizFrame(LayoutXML layout, String targetFilename) {
+        init(layout.width, layout.height);
 
         // Make the panel we draw to.
-        add(new DisplayPanel(channelValues, config.shapes, config.background));
+        add(new DisplayPanel(layout));
 
         // Thread to read from file and repaint frame.
         TailListenerThread lt = new TailListenerThread(
-                config.targetFilename, channelValues, this);
+                targetFilename, layout.channelValues, this);
         lt.start();
     }
 

@@ -15,17 +15,17 @@ class DisplayPanel extends JPanel {
     List<Shape> shapes; // Shapes to render each frame
     Color bgColor;
 
-    public DisplayPanel(int[] channelValues, List<Shape> shapes, Color bgColor) {
-        this.channelValues = channelValues;
-        this.shapes = shapes;
-        this.bgColor = bgColor;
+    public DisplayPanel(LayoutXML layout) {
+        this.channelValues = layout.channelValues;
+        this.shapes = layout.shapes;
+        this.bgColor = layout.background;
     }
 
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g; // Cast for access to Graphics2D API's
         
-        // Set the background color to the value from the config file
+        // Set the background color to the value from the layout file
         setBackground(bgColor);
 
         // Paint each shape, with alpha from the desired channel

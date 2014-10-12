@@ -12,18 +12,21 @@ import org.dom4j.Document;
 
 public class Visualizer {
 
-    // Filename to read configuration data from.
-    private static final String CONFIG_FILENAME = "/samplecfg.xml";
+    // Filename to read layout data from.
+    private static final String LAYOUT_FILENAME = "/layout1.xml";
 
     public static void main(String[] args) throws Exception {
-        // ConfigXML has constants with all config data after parse
-        final ConfigXML config = new ConfigXML(CONFIG_FILENAME);
+        // Get vixen log file from command line
+        final String targetFilename = args[0];
+        
+        // LayoutXML has constants with all layout data after parse
+        final LayoutXML layout = new LayoutXML(LAYOUT_FILENAME);
 
-        // Launch the display, passing the config data
+        // Launch the display, passing the layout data
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                VizFrame frame = new VizFrame(config);
+                VizFrame frame = new VizFrame(layout, targetFilename);
                 frame.setVisible(true);
             }
         });
