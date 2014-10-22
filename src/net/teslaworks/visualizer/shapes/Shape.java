@@ -1,5 +1,6 @@
 package net.teslaworks.visualizer.shapes;
 
+import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics2D;
 
@@ -19,6 +20,7 @@ public abstract class Shape {
     public final int red;
     public final int blue;
     public final int green;
+    public final boolean fill;
 
     // Make a new shape from a <shape> tag in configuration
     public static Shape makeShape(Element e) {
@@ -44,6 +46,7 @@ public abstract class Shape {
         red = Integer.parseInt(e.attributeValue("red"));
         blue = Integer.parseInt(e.attributeValue("blue"));
         green = Integer.parseInt(e.attributeValue("green"));
+        fill = Boolean.parseBoolean(e.attributeValue("fill"));
     }
 
     public String toString() {
@@ -52,6 +55,7 @@ public abstract class Shape {
 
     // Draw this shape to the graphics2d instance
     public void paint(Graphics2D g2d, int channelValue) {
+        g2d.setStroke(new BasicStroke(3));
         g2d.setColor(new Color(red, green, blue, channelValue));
     }
 }

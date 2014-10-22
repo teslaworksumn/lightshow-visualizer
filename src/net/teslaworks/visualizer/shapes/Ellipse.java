@@ -12,14 +12,12 @@ public class Ellipse extends Shape {
     // Shape size
     public final int width;
     public final int height;
-    public final boolean fill;
 
     // Set values unique to rectangles
     protected Ellipse(Element e) {
         super(e);
         width = Integer.parseInt(e.attributeValue("width"));
         height = Integer.parseInt(e.attributeValue("height"));
-        fill = Boolean.parseBoolean(e.attributeValue("fill"));
     }
 
     // Draw this rectangle
