@@ -13,7 +13,7 @@ import org.dom4j.Document;
 public class Visualizer {
 
     // Filename to read layout data from.
-    private static final String LAYOUT_FILENAME = "/layout1.xml";
+    private static final String LAYOUT_FILENAME = "/layout2.xml";
 
     public static void main(String[] args) throws Exception {
         // Get vixen log file from command line

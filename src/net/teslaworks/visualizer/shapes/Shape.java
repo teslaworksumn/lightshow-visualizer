@@ -27,6 +27,8 @@ public abstract class Shape {
         switch (type) {
         case "rect":
             return new Rectangle(e);
+        case "ellipse":
+            return new Ellipse(e);
         }
         throw new IllegalArgumentException("Unknown shape type: " + e.asXML());
     }
