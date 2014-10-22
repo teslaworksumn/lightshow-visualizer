@@ -7,17 +7,19 @@ import net.teslaworks.visualizer.LayoutXML;
 
 import org.dom4j.Element;
 
-public class Ellipse extends Shape {
+public class Oval extends Shape {
 
     // Shape size
     public final int width;
     public final int height;
+    public final boolean fill;
 
     // Set values unique to rectangles
-    protected Ellipse(Element e) {
+    protected Oval(Element e) {
         super(e);
         width = Integer.parseInt(e.attributeValue("width"));
         height = Integer.parseInt(e.attributeValue("height"));
+        fill = Boolean.parseBoolean(e.attributeValue("fill"));
     }
 
     // Draw this rectangle

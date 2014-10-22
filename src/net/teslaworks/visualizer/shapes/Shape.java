@@ -20,7 +20,6 @@ public abstract class Shape {
     public final int red;
     public final int blue;
     public final int green;
-    public final boolean fill;
 
     // Make a new shape from a <shape> tag in configuration
     public static Shape makeShape(Element e) {
@@ -29,8 +28,10 @@ public abstract class Shape {
         switch (type) {
         case "rect":
             return new Rectangle(e);
-        case "ellipse":
-            return new Ellipse(e);
+        case "oval":
+            return new Oval(e);
+        case "line":
+            return new Line(e);
         }
         throw new IllegalArgumentException("Unknown shape type: " + e.asXML());
     }
@@ -46,7 +47,6 @@ public abstract class Shape {
         red = Integer.parseInt(e.attributeValue("red"));
         blue = Integer.parseInt(e.attributeValue("blue"));
         green = Integer.parseInt(e.attributeValue("green"));
-        fill = Boolean.parseBoolean(e.attributeValue("fill"));
     }
 
     public String toString() {
