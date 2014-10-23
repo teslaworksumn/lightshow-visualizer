@@ -32,6 +32,8 @@ public abstract class Shape {
             return new Oval(e);
         case "line":
             return new Line(e);
+        case "arc":
+            return new Arc(e);
         }
         throw new IllegalArgumentException("Unknown shape type: " + e.asXML());
     }
