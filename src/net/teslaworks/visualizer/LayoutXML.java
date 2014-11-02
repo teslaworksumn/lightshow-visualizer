@@ -12,6 +12,7 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.Node;
+import org.dom4j.QName;
 import org.dom4j.io.SAXReader;
 
 import net.teslaworks.visualizer.shapes.Rectangle;
@@ -23,7 +24,7 @@ public class LayoutXML {
     final public int[] channelValues;
     final public int width, height;
     final public Color background;
-    final public List<Shape> shapes;
+    final public Group topGroup;
 
     // Given layout filename, parses all relevant data and stores it
     public LayoutXML(String layoutFilename)
@@ -48,11 +49,13 @@ public class LayoutXML {
         int bgBlue = Integer.parseInt(bgElement.attributeValue("blue"));
         background = new Color(bgRed, bgGreen, bgBlue);
 
-        // All the shapes to render
-        List<Node> shapeNodes = layout.selectNodes("/layout/elements/shape");
-        shapes = new ArrayList<>();
-        for (Node n : shapeNodes) {
-            shapes.add(Shape.makeShape((Element) n));
-        }
+        // Change top level 'elements' to a group node.
+        Element elements = (Element) layout.selectSingleNode("/layout/elements");
+        elements.setQName(new QName("group"));
+        elements.addAttribute("x", "0");
+        elements.addAttribute("y", "0");
+        
+        // The top level group containing all the shapes and subgroups
+        topGroup = new Group(elements, 0, 0);
     }
 }

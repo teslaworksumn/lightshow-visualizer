@@ -15,21 +15,21 @@ public class Rectangle extends Shape {
     public final boolean fill;
 
     // Set values unique to rectangles
-    protected Rectangle(Element e) {
-        super(e);
+    protected Rectangle(Element e, int xOffset, int yOffset) {
+        super(e, xOffset, yOffset);
         width = Integer.parseInt(e.attributeValue("width"));
         height = Integer.parseInt(e.attributeValue("height"));
         fill = Boolean.parseBoolean(e.attributeValue("fill"));
     }
 
     // Draw this rectangle
-    public void paint(Graphics2D g2d, int channelValue) {
-        super.paint(g2d, channelValue);
+    public void paint(Graphics2D g2d, int[] channelValues) {
+        super.paint(g2d, channelValues);
         if (fill) {
-            g2d.fillRect(x, y, width, height);
+            g2d.fillRect(x + xOffset, y + yOffset, width, height);
         }
         else {
-            g2d.drawRect(x, y, width, height);
+            g2d.drawRect(x + xOffset, y + yOffset, width, height);
         }
     }
 }

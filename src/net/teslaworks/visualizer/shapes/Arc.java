@@ -17,8 +17,8 @@ public class Arc extends Shape {
     public final boolean fill;
 
     // Set values unique to rectangles
-    protected Arc(Element e) {
-        super(e);
+    protected Arc(Element e, int xOffset, int yOffset) {
+        super(e, xOffset, yOffset);
         width = Integer.parseInt(e.attributeValue("width"));
         height = Integer.parseInt(e.attributeValue("height"));
         start = Integer.parseInt(e.attributeValue("start"));
@@ -26,14 +26,14 @@ public class Arc extends Shape {
         fill = Boolean.parseBoolean(e.attributeValue("fill"));
     }
 
-    // Draw this rectangle
-    public void paint(Graphics2D g2d, int channelValue) {
-        super.paint(g2d, channelValue);
+    // Draw this arc
+    public void paint(Graphics2D g2d, int[] channelValues) {
+        super.paint(g2d, channelValues);
         if (fill) {
-            g2d.fillArc(x, y, width, height, start, size);
+            g2d.fillArc(x + xOffset, y + yOffset, width, height, start, size);
         }
         else {
-            g2d.drawArc(x, y, width, height, start, size);
+            g2d.drawArc(x + xOffset, y + yOffset, width, height, start, size);
         }
     }
 }
