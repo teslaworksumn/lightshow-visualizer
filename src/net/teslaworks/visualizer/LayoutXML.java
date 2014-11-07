@@ -1,22 +1,14 @@
 package net.teslaworks.visualizer;
 
 import java.awt.Color;
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
-import org.dom4j.Node;
 import org.dom4j.QName;
 import org.dom4j.io.SAXReader;
-
-import net.teslaworks.visualizer.shapes.Rectangle;
-import net.teslaworks.visualizer.shapes.Shape;
 
 public class LayoutXML {
 

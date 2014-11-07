@@ -1,21 +1,8 @@
 package net.teslaworks.visualizer;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.EventQueue;
-import java.awt.Insets;
-import java.awt.RenderingHints;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Random;
-
 import javax.swing.JFrame;
-import javax.swing.SwingUtilities;
-import javax.swing.border.EmptyBorder;
 
-import net.teslaworks.visualizer.shapes.Rectangle;
-
+@SuppressWarnings("serial")
 public class VizFrame extends JFrame {
 
     // Make the frame with specified configuration

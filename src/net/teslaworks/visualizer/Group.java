@@ -15,9 +15,10 @@ public class Group {
     private final List<Group> subgroups;
     private final int x, y;
 
-    public Group(Element e, int xOffset, int yOffset) {
-        this.xOffset = xOffset;
-        this.yOffset = yOffset;
+    @SuppressWarnings("unchecked")
+    public Group(Element e, int _xOffset, int _yOffset) {
+        this.xOffset = _xOffset;
+        this.yOffset = _yOffset;
         this.shapes = new ArrayList<>();
         this.subgroups = new ArrayList<>();
 
