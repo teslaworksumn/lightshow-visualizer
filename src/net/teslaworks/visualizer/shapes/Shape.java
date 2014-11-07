@@ -38,6 +38,8 @@ public abstract class Shape {
             return new Arc(e, xOffset, yOffset);
         case "fan":
             return new Fan(e, xOffset, yOffset);
+        case "megatree":
+            return new Megatree(e, xOffset, yOffset);
         }
         throw new IllegalArgumentException("Unknown shape type: " + e.asXML());
     }
@@ -52,9 +54,9 @@ public abstract class Shape {
         this.xOffset = xOffset;
         this.yOffset = yOffset;
 
-        red = Integer.parseInt(e.attributeValue("red", "0"));
-        blue = Integer.parseInt(e.attributeValue("blue", "0"));
-        green = Integer.parseInt(e.attributeValue("green", "0"));
+        red = Integer.parseInt(e.attributeValue("red", "255"));
+        blue = Integer.parseInt(e.attributeValue("blue", "255"));
+        green = Integer.parseInt(e.attributeValue("green", "255"));
     }
 
     public String toString() {
