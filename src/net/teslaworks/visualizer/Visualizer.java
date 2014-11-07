@@ -5,7 +5,7 @@ import javax.swing.SwingUtilities;
 public class Visualizer {
 
     // Filename to read layout data from.
-    private static final String LAYOUT_FILENAME = "/layout7.xml";
+    private static final String LAYOUT_FILENAME = "/layout8.xml";
 
     public static void main(String[] args) throws Exception {
         // Get vixen log file from command line

@@ -28,6 +28,8 @@ public abstract class Shape {
         // Switch based on "type" attribute in tag.
         String type = e.attributeValue("type");
         switch (type) {
+        case "text":
+            return new Text(e, xOffset, yOffset);
         case "rect":
             return new Rectangle(e, xOffset, yOffset);
         case "oval":
