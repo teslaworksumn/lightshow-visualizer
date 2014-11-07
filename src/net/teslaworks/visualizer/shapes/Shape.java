@@ -36,6 +36,8 @@ public abstract class Shape {
             return new Line(e, xOffset, yOffset);
         case "arc":
             return new Arc(e, xOffset, yOffset);
+        case "fan":
+            return new Fan(e, xOffset, yOffset);
         }
         throw new IllegalArgumentException("Unknown shape type: " + e.asXML());
     }
@@ -50,9 +52,9 @@ public abstract class Shape {
         this.xOffset = xOffset;
         this.yOffset = yOffset;
 
-        red = Integer.parseInt(e.attributeValue("red"));
-        blue = Integer.parseInt(e.attributeValue("blue"));
-        green = Integer.parseInt(e.attributeValue("green"));
+        red = Integer.parseInt(e.attributeValue("red", "0"));
+        blue = Integer.parseInt(e.attributeValue("blue", "0"));
+        green = Integer.parseInt(e.attributeValue("green", "0"));
     }
 
     public String toString() {
