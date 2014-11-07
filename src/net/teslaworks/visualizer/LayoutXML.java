@@ -26,10 +26,9 @@ public class LayoutXML {
     final public List<Shape> shapes;
 
     // Given layout filename, parses all relevant data and stores it
-    public LayoutXML(String layoutFilename)
+    public LayoutXML(File layoutFile)
             throws DocumentException, IOException {
-        URL layoutURL = getClass().getResource(layoutFilename);
-        Document layout = new SAXReader().read(layoutURL);;
+        Document layout = new SAXReader().read(layoutFile);;
 
         // Channel count
         Element channels =
