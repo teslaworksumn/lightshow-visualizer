@@ -3,6 +3,7 @@ package net.teslaworks.visualizer;
 import java.awt.Component;
 import java.awt.HeadlessException;
 import java.io.File;
+import java.io.IOException;
 
 import javax.swing.JDialog;
 import javax.swing.JFileChooser;
@@ -33,7 +34,7 @@ public class FileChooser {
 	public File getFile() {
 		return file;
 	}
-	public String getFilename() {
-		return file.getPath();
+	public String getFilename() throws IOException {
+		return file.getCanonicalPath();
 	}
 }
