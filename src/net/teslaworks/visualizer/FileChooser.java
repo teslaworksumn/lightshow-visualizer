@@ -35,6 +35,6 @@ public class FileChooser {
 		return file;
 	}
 	public String getFilename() throws IOException {
-		return file.getCanonicalPath();
+		return file.getPath();
 	}
 }
