@@ -4,29 +4,33 @@ import java.awt.Graphics2D;
 
 import org.dom4j.Element;
 
-public class Rectangle extends Shape {
+public class Arc extends Shape {
 
     // Shape size
     public final int width;
     public final int height;
+    public final int start;
+    public final int size;
     public final boolean fill;
 
     // Set values unique to rectangles
-    protected Rectangle(Element e, int xOffset, int yOffset) {
+    protected Arc(Element e, int xOffset, int yOffset) {
         super(e, xOffset, yOffset);
         width = Integer.parseInt(e.attributeValue("width"));
         height = Integer.parseInt(e.attributeValue("height"));
+        start = Integer.parseInt(e.attributeValue("start"));
+        size = Integer.parseInt(e.attributeValue("size"));
         fill = Boolean.parseBoolean(e.attributeValue("fill"));
     }
 
-    // Draw this rectangle
+    // Draw this arc
     public void paint(Graphics2D g2d, int[] channelValues) {
         super.paint(g2d, channelValues);
         if (fill) {
-            g2d.fillRect(x + xOffset, y + yOffset, width, height);
+            g2d.fillArc(x + xOffset, y + yOffset, width, height, start, size);
         }
         else {
-            g2d.drawRect(x + xOffset, y + yOffset, width, height);
+            g2d.drawArc(x + xOffset, y + yOffset, width, height, start, size);
         }
     }
 }
