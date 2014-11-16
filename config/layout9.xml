@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<layout>
+    <size width="800" height="600"/>
+    <channels count="16"/>
+    <background red="75" green="75" blue="75" />
+    <elements>
+        <group x="300" y="400"><!-- Cylinder is a 200x100 box -->
+            <group x="0" y="0"><!-- Cylinder Red is 180x100 -->
+  	            <shape type="line" name="Cylinder Red 1" x="0" y="0" x2="40" y2="100" red="255" green="0" blue="0" relative="true" channel="0" />
+  	            <shape type="line" name="Cylinder Red 2" x="20" y="0" x2="40" y2="100" red="255" green="0" blue="0" relative="true" channel="1" />
+  	            <shape type="line" name="Cylinder Red 3" x="40" y="0" x2="40" y2="100" red="255" green="0" blue="0" relative="true" channel="2" />
+  	            <shape type="line" name="Cylinder Red 4" x="60" y="0" x2="40" y2="100" red="255" green="0" blue="0" relative="true" channel="3" />
+  	            <shape type="line" name="Cylinder Red 5" x="80" y="0" x2="40" y2="100" red="255" green="0" blue="0" relative="true" channel="4" />
+  	            <shape type="line" name="Cylinder Red 6" x="100" y="0" x2="40" y2="100" red="255" green="0" blue="0" relative="true" channel="5" />
+  	            <shape type="line" name="Cylinder Red 7" x="120" y="0" x2="40" y2="100" red="255" green="0" blue="0" relative="true" channel="6" />
+  	            <shape type="line" name="Cylinder Red 8" x="140" y="0" x2="40" y2="100" red="255" green="0" blue="0" relative="true" channel="7" />
+            </group>
+            <group x="10" y="0"><!-- Cylinder Green is 180x100, offset 10 from Red -->
+  	            <shape type="line" name="Cylinder Green 1" x="0" y="0" x2="40" y2="100" green="255" red="0" blue="0" relative="true" channel="8" />
+  	            <shape type="line" name="Cylinder Green 2" x="20" y="0" x2="40" y2="100" green="255" red="0" blue="0" relative="true" channel="9" />
+  	            <shape type="line" name="Cylinder Green 3" x="40" y="0" x2="40" y2="100" green="255" red="0" blue="0" relative="true" channel="10" />
+  	            <shape type="line" name="Cylinder Green 4" x="60" y="0" x2="40" y2="100" green="255" red="0" blue="0" relative="true" channel="11" />
+  	            <shape type="line" name="Cylinder Green 5" x="80" y="0" x2="40" y2="100" green="255" red="0" blue="0" relative="true" channel="12" />
+  	            <shape type="line" name="Cylinder Green 6" x="100" y="0" x2="40" y2="100" green="255" red="0" blue="0" relative="true" channel="13" />
+  	            <shape type="line" name="Cylinder Green 7" x="120" y="0" x2="40" y2="100" green="255" red="0" blue="0" relative="true" channel="14" />
+  	            <shape type="line" name="Cylinder Green 8" x="140" y="0" x2="40" y2="100" green="255" red="0" blue="0" relative="true" channel="15" />
+            </group>
+            <group x="0" y="0"><!-- Cylinder Blue is 180x100 -->
+  	            <shape type="line" name="Cylinder Blue 1" x="0" y="100" x2="40" y2="0" blue="255" red="0" green="0" relative="true" channel="16" />
+  	            <shape type="line" name="Cylinder Blue 2" x="20" y="100" x2="40" y2="0" blue="255" red="0" green="0" relative="true" channel="17" />
+  	            <shape type="line" name="Cylinder Blue 3" x="40" y="100" x2="40" y2="0" blue="255" red="0" green="0" relative="true" channel="18" />
+  	            <shape type="line" name="Cylinder Blue 4" x="60" y="100" x2="40" y2="0" blue="255" red="0" green="0" relative="true" channel="19" />
+  	            <shape type="line" name="Cylinder Blue 5" x="80" y="100" x2="40" y2="0" blue="255" red="0" green="0" relative="true" channel="20" />
+  	            <shape type="line" name="Cylinder Blue 6" x="100" y="100" x2="40" y2="0" blue="255" red="0" green="0" relative="true" channel="21" />
+  	            <shape type="line" name="Cylinder Blue 7" x="120" y="100" x2="40" y2="0" blue="255" red="0" green="0" relative="true" channel="22" />
+  	            <shape type="line" name="Cylinder Blue 8" x="140" y="100" x2="40" y2="0" blue="255" red="0" green="0" relative="true" channel="23" />
+            </group>
+            <group x="10" y="0"><!-- Cylinder White is 180x100, offset 10 from Blue -->
+  	            <shape type="line" name="Cylinder White 1" x="0" y="100" x2="40" y2="0" blue="255" red="255" green="255" relative="true" channel="24" />
+  	            <shape type="line" name="Cylinder White 2" x="20" y="100" x2="40" y2="0" blue="255" red="255" green="255" relative="true" channel="25" />
+  	            <shape type="line" name="Cylinder White 3" x="40" y="100" x2="40" y2="0" blue="255" red="255" green="255" relative="true" channel="26" />
+  	            <shape type="line" name="Cylinder White 4" x="60" y="100" x2="40" y2="0" blue="255" red="255" green="255" relative="true" channel="27" />
+  	            <shape type="line" name="Cylinder White 5" x="80" y="100" x2="40" y2="0" blue="255" red="255" green="255" relative="true" channel="28" />
+  	            <shape type="line" name="Cylinder White 6" x="100" y="100" x2="40" y2="0" blue="255" red="255" green="255" relative="true" channel="29" />
+  	            <shape type="line" name="Cylinder White 7" x="120" y="100" x2="40" y2="0" blue="255" red="255" green="255" relative="true" channel="30" />
+  	            <shape type="line" name="Cylinder White 8" x="140" y="100" x2="40" y2="0" blue="255" red="255" green="255" relative="true" channel="31" />
+            </group>
+        </group>
+
+    </elements>
+</layout>
