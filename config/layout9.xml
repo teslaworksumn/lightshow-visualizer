@@ -79,6 +79,32 @@
           fontSize="30" channel="47">  M  </shape>
         </group>
 
-        
+        <!-- Lower left drapes -->
+        <group x="0" y="480">
+          <shape type="arc" name="Lower Drape Left 1 Blue" x="0" y="0" width="40" height="120" red="0" green="0" blue="255" fill="false" start="180" size="180" channel="48" />
+          <shape type="arc" name="Lower Drape Left 1 Yellow" x="3" y="3" width="40" height="120" red="255" green="215" blue="0" fill="false" start="180" size="180" channel="48" />
+          <shape type="arc" name="Lower Drape Left 2 Red" x="20" y="20" width="40" height="120" red="255" green="0" blue="0" fill="false" start="180" size="180" channel="48" />
+          <shape type="arc" name="Lower Drape Left 2 White" x="23" y="23" width="40" height="120" red="255" green="255" blue="255" fill="false" start="180" size="180" channel="48" />
+          <shape type="arc" name="Lower Drape Left 3 Blue" x="40" y="40" width="40" height="120" red="0" green="0" blue="255" fill="false" start="180" size="180" channel="48" />
+          <shape type="arc" name="Lower Drape Left 3 Yellow" x="43" y="43" width="40" height="120" red="255" green="215" blue="0" fill="false" start="180" size="180" channel="48" />
+          <shape type="arc" name="Lower Drape Left 4 Red" x="60" y="60" width="40" height="120" red="255" green="0" blue="0" fill="false" start="180" size="180" channel="48" />
+          <shape type="arc" name="Lower Drape Left 4 White" x="63" y="63" width="40" height="120" red="255" green="255" blue="255" fill="false" start="180" size="180" channel="48" />
+          <shape type="arc" name="Lower Drape Left 5 Blue" x="80" y="80" width="40" height="120" red="0" green="0" blue="255" fill="false" start="180" size="180" channel="48" />
+          <shape type="arc" name="Lower Drape Left 5 Yellow" x="83" y="83" width="40" height="120" red="255" green="215" blue="0" fill="false" start="180" size="180" channel="48" />
+        </group>
+
+        <!-- Lower left drapes -->
+        <group x="180" y="480">
+          <shape type="arc" name="Lower Drape Right 5 Blue" x="0" y="0" width="40" height="120" red="0" green="0" blue="255" fill="false" start="180" size="180" channel="48" />
+          <shape type="arc" name="Lower Drape Right 5 Yellow" x="3" y="3" width="40" height="120" red="255" green="215" blue="0" fill="false" start="180" size="180" channel="48" />
+          <shape type="arc" name="Lower Drape Right 4 Red" x="20" y="20" width="40" height="120" red="255" green="0" blue="0" fill="false" start="180" size="180" channel="48" />
+          <shape type="arc" name="Lower Drape Right 4 White" x="23" y="23" width="40" height="120" red="255" green="255" blue="255" fill="false" start="180" size="180" channel="48" />
+          <shape type="arc" name="Lower Drape Right 3 Blue" x="40" y="40" width="40" height="120" red="0" green="0" blue="255" fill="false" start="180" size="180" channel="48" />
+          <shape type="arc" name="Lower Drape Right 3 Yellow" x="43" y="43" width="40" height="120" red="255" green="215" blue="0" fill="false" start="180" size="180" channel="48" />
+          <shape type="arc" name="Lower Drape Right 2 Red" x="60" y="60" width="40" height="120" red="255" green="0" blue="0" fill="false" start="180" size="180" channel="48" />
+          <shape type="arc" name="Lower Drape Right 2 White" x="63" y="63" width="40" height="120" red="255" green="255" blue="255" fill="false" start="180" size="180" channel="48" />
+          <shape type="arc" name="Lower Drape Right 1 Blue" x="80" y="80" width="40" height="120" red="0" green="0" blue="255" fill="false" start="180" size="180" channel="48" />
+          <shape type="arc" name="Lower Drape Right 1 Yellow" x="83" y="83" width="40" height="120" red="255" green="215" blue="0" fill="false" start="180" size="180" channel="48" />
+        </group>
     </elements>
 </layout>
