@@ -164,7 +164,7 @@
         </group>
 
         <!-- Outer Pole 1 -->
-        <shape type="line" name="Outer Pole 1" x="120" y="300" x2="0" y2="100" blue="0" red="255" green="0" relative="true" channel="101" />
+        <shape type="line" name="Outer Pole 1" x="90" y="410" x2="0" y2="90" blue="0" red="255" green="0" relative="true" channel="101" />
 
         <!-- Planters -->
         <group x="0" y="100">
@@ -201,6 +201,31 @@
                 <shape type="line" name="Railing 4 Right Blue" x="63" y="78" x2="20" y2="20" blue="255" red="0" green="0" relative="true" channel="127" />
             </group>
         </group>
+
+        <!-- Handicap railings -->
+        <group x="100" y="400">
+            <shape type="line" name="Handicap Railing 1 Green" x="0" y="5" x2="20" y2="10" blue="0" red="0" green="255" relative="true" channel="128" />
+            <shape type="line" name="Handicap Railing 2 Green" x="30" y="15" x2="20" y2="10" blue="0" red="0" green="255" relative="true" channel="130" />
+            <shape type="line" name="Handicap Railing 3 Green" x="60" y="25" x2="20" y2="10" blue="0" red="0" green="255" relative="true" channel="132" />
+            <shape type="line" name="Handicap Railing 4 Green" x="90" y="35" x2="20" y2="10" blue="0" red="0" green="255" relative="true" channel="134" />
+            <shape type="line" name="Handicap Railing 5 Green" x="120" y="45" x2="20" y2="10" blue="0" red="0" green="255" relative="true" channel="136" />
+            <shape type="line" name="Handicap Railing 6 Green" x="150" y="55" x2="20" y2="10" blue="0" red="0" green="255" relative="true" channel="138" />
+            <shape type="line" name="Handicap Railing 7 Green" x="180" y="65" x2="20" y2="10" blue="0" red="0" green="255" relative="true" channel="140" />
+            <group x="3" y="3">
+                <shape type="line" name="Handicap Railing 1 Blue" x="0" y="5" x2="20" y2="10" blue="255" red="0" green="0" relative="true" channel="128" />
+                <shape type="line" name="Handicap Railing 2 Blue" x="30" y="15" x2="20" y2="10" blue="255" red="0" green="0" relative="true" channel="130" />
+                <shape type="line" name="Handicap Railing 3 Blue" x="60" y="25" x2="20" y2="10" blue="255" red="0" green="0" relative="true" channel="132" />
+                <shape type="line" name="Handicap Railing 4 Blue" x="90" y="35" x2="20" y2="10" blue="255" red="0" green="0" relative="true" channel="134" />
+                <shape type="line" name="Handicap Railing 5 Blue" x="120" y="45" x2="20" y2="10" blue="255" red="0" green="0" relative="true" channel="136" />
+                <shape type="line" name="Handicap Railing 6 Blue" x="150" y="55" x2="20" y2="10" blue="255" red="0" green="0" relative="true" channel="138" />
+                <shape type="line" name="Handicap Railing 7 Blue" x="180" y="65" x2="20" y2="10" blue="255" red="0" green="0" relative="true" channel="140" />
+            </group>
+        </group>
+
+
+
+
+
 
     </elements>
 </layout>
