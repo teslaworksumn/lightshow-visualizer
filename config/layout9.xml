@@ -163,5 +163,44 @@
             <shape type="line" name="Snowman Arm R Down 2" x="85" y="70" x2="-20" y2="20" blue="255" red="255" green="255" relative="true" channel="100" />
         </group>
 
+        <!-- Outer Pole 1 -->
+        <shape type="line" name="Outer Pole 1" x="120" y="300" x2="0" y2="100" blue="0" red="255" green="0" relative="true" channel="101" />
+
+        <!-- Planters -->
+        <group x="0" y="100">
+            <shape type="rect" name="Planter 1 White" x="0" y="0" width="100" height="40" red="255" green="255" blue="255" fill="true" channel="102" />
+            <shape type="rect" name="Planter 1 Green" x="3" y="3" width="100" height="40" red="0" green="255" blue="0" fill="true" channel="103" />
+            <shape type="rect" name="Planter 2 White" x="0" y="40" width="100" height="40" red="255" green="255" blue="255" fill="true" channel="104" />
+            <shape type="rect" name="Planter 2 Red" x="3" y="43" width="100" height="40" red="255" green="0" blue="0" fill="true" channel="105" />
+            <shape type="rect" name="Planter 3 White" x="0" y="80" width="100" height="40" red="255" green="255" blue="255" fill="true" channel="106" />
+            <shape type="rect" name="Planter 3 Green" x="3" y="83" width="100" height="40" red="0" green="255" blue="0" fill="true" channel="107" />
+            <shape type="rect" name="Planter 4 White" x="0" y="120" width="100" height="40" red="255" green="255" blue="255" fill="true" channel="108" />
+            <shape type="rect" name="Planter 4 Red" x="3" y="123" width="100" height="40" red="255" green="0" blue="0" fill="true" channel="109" />
+            <shape type="rect" name="Planter 5 White" x="0" y="160" width="100" height="40" red="255" green="255" blue="255" fill="true" channel="110" />
+            <shape type="rect" name="Planter 5 Red" x="3" y="163" width="100" height="40" red="255" green="0" blue="0" fill="true" channel="111" />
+        </group>
+
+        <!-- Railings -->
+        <group x="0" y="0">
+            <shape type="line" name="Railing 1 Left White" x="0" y="0" x2="20" y2="20" blue="255" red="255" green="255" relative="true" channel="112" />
+            <shape type="line" name="Railing 1 Left Blue" x="3" y="3" x2="20" y2="20" blue="255" red="0" green="0" relative="true" channel="113" />
+            <shape type="line" name="Railing 2 Left White" x="20" y="25" x2="20" y2="20" blue="255" red="255" green="255" relative="true" channel="114" />
+            <shape type="line" name="Railing 2 Left Blue" x="23" y="28" x2="20" y2="20" blue="255" red="0" green="0" relative="true" channel="115" />
+            <shape type="line" name="Railing 3 Left White" x="40" y="50" x2="20" y2="20" blue="255" red="255" green="255" relative="true" channel="116" />
+            <shape type="line" name="Railing 3 Left Blue" x="43" y="53" x2="20" y2="20" blue="255" red="0" green="0" relative="true" channel="117" />
+            <shape type="line" name="Railing 4 Left White" x="60" y="75" x2="20" y2="20" blue="255" red="255" green="255" relative="true" channel="118" />
+            <shape type="line" name="Railing 4 Left Blue" x="63" y="78" x2="20" y2="20" blue="255" red="0" green="0" relative="true" channel="119" />
+            <group x="20" y="0">
+                <shape type="line" name="Railing 1 Right White" x="0" y="0" x2="20" y2="20" blue="255" red="255" green="255" relative="true" channel="120" />
+                <shape type="line" name="Railing 1 Right Blue" x="3" y="3" x2="20" y2="20" blue="255" red="0" green="0" relative="true" channel="121" />
+                <shape type="line" name="Railing 2 Right White" x="20" y="25" x2="20" y2="20" blue="255" red="255" green="255" relative="true" channel="122" />
+                <shape type="line" name="Railing 2 Right Blue" x="23" y="28" x2="20" y2="20" blue="255" red="0" green="0" relative="true" channel="123" />
+                <shape type="line" name="Railing 3 Right White" x="40" y="50" x2="20" y2="20" blue="255" red="255" green="255" relative="true" channel="124" />
+                <shape type="line" name="Railing 3 Right Blue" x="43" y="53" x2="20" y2="20" blue="255" red="0" green="0" relative="true" channel="125" />
+                <shape type="line" name="Railing 4 Right White" x="60" y="75" x2="20" y2="20" blue="255" red="255" green="255" relative="true" channel="126" />
+                <shape type="line" name="Railing 4 Right Blue" x="63" y="78" x2="20" y2="20" blue="255" red="0" green="0" relative="true" channel="127" />
+            </group>
+        </group>
+
     </elements>
 </layout>
