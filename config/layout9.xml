@@ -246,10 +246,10 @@
         <shape type="line" name="Outer Pole 2" x="110" y="105" x2="0" y2="90" blue="0" red="255" green="0" relative="true" channel="146" />
 
         <!-- Outer Pole 3 -->
-        <shape type="line" name="Outer Pole 3" x="150" y="105" x2="0" y2="90" blue="0" red="255" green="0" relative="true" channel="147" />
+        <shape type="line" name="Outer Pole 3" x="130" y="105" x2="0" y2="90" blue="0" red="255" green="0" relative="true" channel="147" />
 
         <!-- Inner Pole 1 -->
-        <shape type="line" name="Inner Pole 1" x="130" y="115" x2="0" y2="90" blue="0" red="255" green="0" relative="true" channel="148" />
+        <shape type="line" name="Inner Pole 1" x="150" y="115" x2="0" y2="90" blue="0" red="255" green="0" relative="true" channel="148" />
 
         <!-- Fan 1 -->
         <shape type="fan" name="Fan 1, Channels 149 - 155" x="200" y="200" width="100" height="100" channel="149">
@@ -311,6 +311,70 @@
             <spoke red="0" green="255" blue="0"/>
             <spoke red="255" green="0" blue="0"/>
         </shape>
+
+        <!-- Tree 3 -->
+        <group x="310" y="310">
+            <shape type="line" name="Tree 3 Blue Trunk" x="40" y="0" x2="0" y2="80" blue="255" red="0" green="0" relative="true" channel="174" />
+            <shape type="line" name="Tree 3 Blue Branch 1" x="0" y="30" x2="80" y2="30" blue="255" red="0" green="0" relative="true" channel="174" />
+            <shape type="line" name="Tree 3 Blue Branch 2" x="10" y="10" x2="40" y2="30" blue="255" red="0" green="0" relative="true" channel="174" />
+            <shape type="line" name="Tree 3 Blue Branch 3" x="70" y="10" x2="40" y2="30" blue="255" red="0" green="0" relative="true" channel="174" />
+            <group x="3" y="3">
+                <shape type="line" name="Tree 3 White Trunk" x="40" y="0" x2="0" y2="80" blue="255" red="255" green="255" relative="true" channel="175" />
+                <shape type="line" name="Tree 3 White Branch 1" x="0" y="30" x2="80" y2="30" blue="255" red="255" green="255" relative="true" channel="175" />
+                <shape type="line" name="Tree 3 White Branch 2" x="10" y="10" x2="40" y2="30" blue="255" red="255" green="255" relative="true" channel="175" />
+                <shape type="line" name="Tree 3 White Branch 3" x="70" y="10" x2="40" y2="30" blue="255" red="255" green="255" relative="true" channel="175" />
+            </group>
+        </group>
+
+        <!-- Outer Pole 4 -->
+        <shape type="line" name="Outer Pole 4" x="170" y="105" x2="0" y2="90" blue="0" red="255" green="0" relative="true" channel="176" />
+
+        <!-- Outer Pole 5 -->
+        <shape type="line" name="Outer Pole 5" x="190" y="105" x2="0" y2="90" blue="0" red="255" green="0" relative="true" channel="177" />
+
+
+        <!-- Tree 4 -->
+        <group x="410" y="310">
+            <shape type="line" name="Tree 4 Green Trunk" x="40" y="0" x2="0" y2="80" blue="0" red="0" green="255" relative="true" channel="178" />
+            <shape type="line" name="Tree 4 Green Branch 1" x="0" y="30" x2="80" y2="30" blue="0" red="0" green="255" relative="true" channel="178" />
+            <shape type="line" name="Tree 4 Green Branch 2" x="10" y="10" x2="40" y2="30" blue="0" red="0" green="255" relative="true" channel="178" />
+            <shape type="line" name="Tree 4 Green Branch 3" x="70" y="10" x2="40" y2="30" blue="0" red="0" green="255" relative="true" channel="178" />
+            <group x="3" y="3">
+                <shape type="line" name="Tree 4 White Trunk" x="40" y="0" x2="0" y2="80" blue="255" red="255" green="255" relative="true" channel="179" />
+                <shape type="line" name="Tree 4 White Branch 1" x="0" y="30" x2="80" y2="30" blue="255" red="255" green="255" relative="true" channel="179" />
+                <shape type="line" name="Tree 4 White Branch 2" x="10" y="10" x2="40" y2="30" blue="255" red="255" green="255" relative="true" channel="179" />
+                <shape type="line" name="Tree 4 White Branch 3" x="70" y="10" x2="40" y2="30" blue="255" red="255" green="255" relative="true" channel="179" />
+            </group>
+        </group>
+
+        <!-- Tree 5 -->
+        <group x="510" y="310">
+            <shape type="line" name="Tree 5 Blue Trunk" x="40" y="0" x2="0" y2="80" blue="255" red="0" green="0" relative="true" channel="180" />
+            <shape type="line" name="Tree 5 Blue Branch 1" x="0" y="30" x2="80" y2="30" blue="255" red="0" green="0" relative="true" channel="180" />
+            <shape type="line" name="Tree 5 Blue Branch 2" x="10" y="10" x2="40" y2="30" blue="255" red="0" green="0" relative="true" channel="180" />
+            <shape type="line" name="Tree 5 Blue Branch 3" x="70" y="10" x2="40" y2="30" blue="255" red="0" green="0" relative="true" channel="180" />
+            <group x="3" y="3">
+                <shape type="line" name="Tree 5 White Trunk" x="40" y="0" x2="0" y2="80" blue="255" red="255" green="255" relative="true" channel="181" />
+                <shape type="line" name="Tree 5 White Branch 1" x="0" y="30" x2="80" y2="30" blue="255" red="255" green="255" relative="true" channel="181" />
+                <shape type="line" name="Tree 5 White Branch 2" x="10" y="10" x2="40" y2="30" blue="255" red="255" green="255" relative="true" channel="181" />
+                <shape type="line" name="Tree 5 White Branch 3" x="70" y="10" x2="40" y2="30" blue="255" red="255" green="255" relative="true" channel="181" />
+            </group>
+        </group>
+
+        <!-- Tree 6 -->
+        <group x="610" y="310">
+            <shape type="line" name="Tree 6 Green Trunk" x="40" y="0" x2="0" y2="80" blue="0" red="0" green="255" relative="true" channel="182" />
+            <shape type="line" name="Tree 6 Green Branch 1" x="0" y="30" x2="80" y2="30" blue="0" red="0" green="255" relative="true" channel="182" />
+            <shape type="line" name="Tree 6 Green Branch 2" x="10" y="10" x2="40" y2="30" blue="0" red="0" green="255" relative="true" channel="182" />
+            <shape type="line" name="Tree 6 Green Branch 3" x="70" y="10" x2="40" y2="30" blue="0" red="0" green="255" relative="true" channel="182" />
+            <group x="3" y="3">
+                <shape type="line" name="Tree 6 White Trunk" x="40" y="0" x2="0" y2="80" blue="255" red="255" green="255" relative="true" channel="183" />
+                <shape type="line" name="Tree 6 White Branch 1" x="0" y="30" x2="80" y2="30" blue="255" red="255" green="255" relative="true" channel="183" />
+                <shape type="line" name="Tree 6 White Branch 2" x="10" y="10" x2="40" y2="30" blue="255" red="255" green="255" relative="true" channel="183" />
+                <shape type="line" name="Tree 6 White Branch 3" x="70" y="10" x2="40" y2="30" blue="255" red="255" green="255" relative="true" channel="183" />
+            </group>
+        </group>
+
 
     </elements>
 </layout>
