@@ -262,6 +262,33 @@
             <spoke red="255" green="0" blue="0"/>
         </shape>
 
+        <!-- Bushes -->
+        <group x="100" y="0">
+            <shape type="rect" name="Bush 1 Blue" x="0" y="0" width="50" height="100" red="0" green="0" blue="255" fill="true" channel="156" />
+            <shape type="rect" name="Bush 1 Green" x="3" y="3" width="50" height="100" red="0" green="255" blue="0" fill="true" channel="157" />
+            <shape type="rect" name="Bush 2 White" x="50" y="0" width="50" height="100" red="255" green="255" blue="255" fill="true" channel="158" />
+            <shape type="rect" name="Bush 2 Red" x="53" y="3" width="50" height="100" red="255" green="0" blue="0" fill="true" channel="159" />
+            <shape type="rect" name="Bush 3 Blue" x="100" y="0" width="50" height="100" red="0" green="0" blue="255" fill="true" channel="156" />
+            <shape type="rect" name="Bush 3 Green" x="103" y="3" width="50" height="100" red="0" green="255" blue="0" fill="true" channel="157" />
+            <shape type="rect" name="Bush 4 White" x="150" y="0" width="50" height="100" red="255" green="255" blue="255" fill="true" channel="158" />
+            <shape type="rect" name="Bush 4 Red" x="153" y="3" width="50" height="100" red="255" green="0" blue="0" fill="true" channel="159" />
+            <shape type="rect" name="Bush 5 Blue" x="200" y="0" width="50" height="100" red="0" green="0" blue="255" fill="true" channel="156" />
+            <shape type="rect" name="Bush 5 Green" x="203" y="3" width="50" height="100" red="0" green="255" blue="0" fill="true" channel="157" />
+            <shape type="rect" name="Bush 6 White" x="250" y="0" width="50" height="100" red="255" green="255" blue="255" fill="true" channel="158" />
+            <shape type="rect" name="Bush 6 Red" x="253" y="3" width="50" height="100" red="255" green="0" blue="0" fill="true" channel="159" />
+            <shape type="rect" name="Bush 7 Blue" x="300" y="0" width="50" height="100" red="0" green="0" blue="255" fill="true" channel="156" />
+            <shape type="rect" name="Bush 7 Green" x="303" y="3" width="50" height="100" red="0" green="255" blue="0" fill="true" channel="157" />
+            <shape type="rect" name="Bush 8 White" x="350" y="0" width="50" height="100" red="255" green="255" blue="255" fill="true" channel="158" />
+            <shape type="rect" name="Bush 8 Red" x="353" y="3" width="50" height="100" red="255" green="0" blue="0" fill="true" channel="159" />
+            <shape type="rect" name="Bush 9 Blue" x="400" y="0" width="50" height="100" red="0" green="0" blue="255" fill="true" channel="156" />
+            <shape type="rect" name="Bush 9 Green" x="403" y="3" width="50" height="100" red="0" green="255" blue="0" fill="true" channel="157" />
+            <shape type="rect" name="Bush 10 White" x="450" y="0" width="50" height="100" red="255" green="255" blue="255" fill="true" channel="158" />
+            <shape type="rect" name="Bush 10 Red" x="453" y="3" width="50" height="100" red="255" green="0" blue="0" fill="true" channel="159" />
+            <shape type="rect" name="Bush 11 Blue" x="500" y="0" width="50" height="100" red="0" green="0" blue="255" fill="true" channel="156" />
+            <shape type="rect" name="Bush 11 Green" x="503" y="3" width="50" height="100" red="0" green="255" blue="0" fill="true" channel="157" />
+            <shape type="rect" name="Bush 12 White" x="550" y="0" width="50" height="100" red="255" green="255" blue="255" fill="true" channel="158" />
+            <shape type="rect" name="Bush 12 Red" x="553" y="3" width="50" height="100" red="255" green="0" blue="0" fill="true" channel="159" />
+        </group>
 
 
     </elements>
