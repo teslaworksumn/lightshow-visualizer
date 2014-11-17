@@ -450,5 +450,71 @@
             <spoke red="255" green="0" blue="0"/>
         </shape>
 
+        <!-- Inner Pole 3 -->
+        <shape type="line" name="Inner Pole 3" x="210" y="105" x2="0" y2="90" blue="0" red="255" green="0" relative="true" channel="224" />
+
+        <!-- Planter 3 -->
+        <group x="600" y="100">
+            <shape type="rect" name="Planter 3 Fill 1" x="0" y="0" width="200" height="100" red="255" green="255" blue="255" fill="true" channel="225" />
+            <shape type="rect" name="Planter 3 Fill 2" x="3" y="3" width="200" height="100" red="255" green="0" blue="0" fill="true" channel="226" />
+        </group>
+
+        <!-- Tree 8 -->
+        <group x="610" y="410">
+            <shape type="line" name="Tree 8 Green Trunk" x="40" y="0" x2="0" y2="80" blue="0" red="0" green="255" relative="true" channel="227" />
+            <shape type="line" name="Tree 8 Green Branch 1" x="0" y="30" x2="80" y2="30" blue="0" red="0" green="255" relative="true" channel="227" />
+            <shape type="line" name="Tree 8 Green Branch 2" x="10" y="10" x2="40" y2="30" blue="0" red="0" green="255" relative="true" channel="227" />
+            <shape type="line" name="Tree 8 Green Branch 3" x="70" y="10" x2="40" y2="30" blue="0" red="0" green="255" relative="true" channel="227" />
+            <group x="3" y="3">
+                <shape type="line" name="Tree 8 White Trunk" x="40" y="0" x2="0" y2="80" blue="255" red="255" green="255" relative="true" channel="228" />
+                <shape type="line" name="Tree 8 White Branch 1" x="0" y="30" x2="80" y2="30" blue="255" red="255" green="255" relative="true" channel="228" />
+                <shape type="line" name="Tree 8 White Branch 2" x="10" y="10" x2="40" y2="30" blue="255" red="255" green="255" relative="true" channel="228" />
+                <shape type="line" name="Tree 8 White Branch 3" x="70" y="10" x2="40" y2="30" blue="255" red="255" green="255" relative="true" channel="228" />
+            </group>
+        </group>
+
+        <!-- Tree 9 -->
+        <group x="510" y="510">
+            <shape type="line" name="Tree 9 Blue Trunk" x="40" y="0" x2="0" y2="80" blue="255" red="0" green="0" relative="true" channel="229" />
+            <shape type="line" name="Tree 9 Blue Branch 1" x="0" y="30" x2="80" y2="30" blue="255" red="0" green="0" relative="true" channel="229" />
+            <shape type="line" name="Tree 9 Blue Branch 2" x="10" y="10" x2="40" y2="30" blue="255" red="0" green="0" relative="true" channel="229" />
+            <shape type="line" name="Tree 9 Blue Branch 3" x="70" y="10" x2="40" y2="30" blue="255" red="0" green="0" relative="true" channel="229" />
+            <group x="3" y="3">
+                <shape type="line" name="Tree 9 White Trunk" x="40" y="0" x2="0" y2="80" blue="255" red="255" green="255" relative="true" channel="230" />
+                <shape type="line" name="Tree 9 White Branch 1" x="0" y="30" x2="80" y2="30" blue="255" red="255" green="255" relative="true" channel="230" />
+                <shape type="line" name="Tree 9 White Branch 2" x="10" y="10" x2="40" y2="30" blue="255" red="255" green="255" relative="true" channel="230" />
+                <shape type="line" name="Tree 9 White Branch 3" x="70" y="10" x2="40" y2="30" blue="255" red="255" green="255" relative="true" channel="230" />
+            </group>
+        </group>
+
+        <!-- Outer Pole 6 -->
+        <shape type="line" name="Outer Pole 6" x="220" y="105" x2="0" y2="90" blue="0" red="255" green="0" relative="true" channel="231" />
+
+        <!-- Outer Pole 7 -->
+        <shape type="line" name="Outer Pole 7" x="230" y="105" x2="0" y2="90" blue="0" red="255" green="0" relative="true" channel="232" />
+
+        <!-- Outer Pole 8 -->
+        <shape type="line" name="Outer Pole 8" x="240" y="105" x2="0" y2="90" blue="0" red="255" green="0" relative="true" channel="233" />
+
+        <!-- Outer Pole 9 -->
+        <shape type="line" name="Outer Pole 9" x="250" y="105" x2="0" y2="90" blue="0" red="255" green="0" relative="true" channel="234" />
+
+        <!-- Tree 10 -->
+        <group x="610" y="510">
+            <shape type="line" name="Tree 10 Green Trunk" x="40" y="0" x2="0" y2="80" blue="0" red="0" green="255" relative="true" channel="235" />
+            <shape type="line" name="Tree 10 Green Branch 1" x="0" y="30" x2="80" y2="30" blue="0" red="0" green="255" relative="true" channel="235" />
+            <shape type="line" name="Tree 10 Green Branch 2" x="10" y="10" x2="40" y2="30" blue="0" red="0" green="255" relative="true" channel="235" />
+            <shape type="line" name="Tree 10 Green Branch 3" x="70" y="10" x2="40" y2="30" blue="0" red="0" green="255" relative="true" channel="235" />
+            <group x="3" y="3">
+                <shape type="line" name="Tree 10 White Trunk" x="40" y="0" x2="0" y2="80" blue="255" red="255" green="255" relative="true" channel="236" />
+                <shape type="line" name="Tree 10 White Branch 1" x="0" y="30" x2="80" y2="30" blue="255" red="255" green="255" relative="true" channel="236" />
+                <shape type="line" name="Tree 10 White Branch 2" x="10" y="10" x2="40" y2="30" blue="255" red="255" green="255" relative="true" channel="236" />
+                <shape type="line" name="Tree 10 White Branch 3" x="70" y="10" x2="40" y2="30" blue="255" red="255" green="255" relative="true" channel="236" />
+            </group>
+        </group>
+
+        <!-- Inner Pole 4 -->
+        <shape type="line" name="Inner Pole 4" x="260" y="105" x2="0" y2="90" blue="0" red="255" green="0" relative="true" channel="235" />
+
     </elements>
 </layout>
