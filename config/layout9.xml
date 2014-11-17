@@ -290,6 +290,27 @@
             <shape type="rect" name="Bush 12 Red" x="553" y="3" width="50" height="100" red="255" green="0" blue="0" fill="true" channel="159" />
         </group>
 
+        <!-- Fan 2 -->
+        <shape type="fan" name="Fan 2, Channels 160 - 166" x="300" y="200" width="100" height="100" channel="160">
+            <spoke red="255" green="255" blue="255"/>
+            <spoke red="255" green="255" blue="255"/>
+            <spoke red="255" green="255" blue="255"/>
+            <spoke red="255" green="255" blue="255"/>
+            <spoke red="255" green="255" blue="255"/>
+            <spoke red="255" green="255" blue="255"/>
+            <spoke red="255" green="255" blue="255"/>
+        </shape>
+
+        <!-- Fan 3 -->
+        <shape type="fan" name="Fan 3, Channels 167 - 173" x="400" y="200" width="100" height="100" channel="167">
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="255" green="0" blue="0"/>
+        </shape>
 
     </elements>
 </layout>
