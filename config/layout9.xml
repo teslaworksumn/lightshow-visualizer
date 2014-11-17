@@ -514,7 +514,60 @@
         </group>
 
         <!-- Inner Pole 4 -->
-        <shape type="line" name="Inner Pole 4" x="260" y="105" x2="0" y2="90" blue="0" red="255" green="0" relative="true" channel="235" />
+        <shape type="line" name="Inner Pole 4" x="260" y="105" x2="0" y2="90" blue="0" red="255" green="0" relative="true" channel="237" />
+
+        <!-- Let it snow -->
+        <shape type="text" name="M Red" x="710" y="560"
+            red="255" green="255" blue="255" font="Times New Roman"
+            fontSize="30" channel="240">  Let  </shape>
+        <shape type="text" name="M Red" x="710" y="610"
+            red="255" green="255" blue="255" font="Times New Roman"
+            fontSize="30" channel="241">  it  </shape>
+        <shape type="text" name="M Red" x="710" y="690"
+            red="255" green="255" blue="255" font="Times New Roman"
+            fontSize="30" channel="242">  Snow!  </shape>
+
+        <!-- Snowflakes -->
+        <group x="700" y="0">
+            <shape type="line" name="Snowflake 1 Line 1" x="20" y="0" x2="0" y2="50" blue="255" red="255" green="255" relative="true" channel="243" />
+            <shape type="line" name="Snowflake 1 Line 2" x="30" y="0" x2="0" y2="50" blue="255" red="255" green="255" relative="true" channel="243" />
+            <shape type="line" name="Snowflake 1 Line 3" x="5" y="10" x2="40" y2="25" blue="255" red="255" green="255" relative="true" channel="243" />
+            <shape type="line" name="Snowflake 1 Line 4" x="5" y="15" x2="40" y2="25" blue="255" red="255" green="255" relative="true" channel="243" />
+            <shape type="line" name="Snowflake 1 Line 5" x="5" y="40" x2="40" y2="-25" blue="255" red="255" green="255" relative="true" channel="243" />
+            <shape type="line" name="Snowflake 1 Line 6" x="5" y="35" x2="40" y2="-25" blue="255" red="255" green="255" relative="true" channel="243" />
+        </group>
+
+        <group x="750" y="0">
+            <shape type="line" name="Snowflake 2 Line 1" x="20" y="0" x2="0" y2="50" blue="255" red="255" green="255" relative="true" channel="244" />
+            <shape type="line" name="Snowflake 2 Line 2" x="30" y="0" x2="0" y2="50" blue="255" red="255" green="255" relative="true" channel="244" />
+            <shape type="line" name="Snowflake 2 Line 3" x="5" y="10" x2="40" y2="25" blue="255" red="255" green="255" relative="true" channel="244" />
+            <shape type="line" name="Snowflake 2 Line 4" x="5" y="15" x2="40" y2="25" blue="255" red="255" green="255" relative="true" channel="244" />
+            <shape type="line" name="Snowflake 2 Line 5" x="5" y="40" x2="40" y2="-25" blue="255" red="255" green="255" relative="true" channel="244" />
+            <shape type="line" name="Snowflake 2 Line 6" x="5" y="35" x2="40" y2="-25" blue="255" red="255" green="255" relative="true" channel="244" />
+        </group>
+
+        <group x="800" y="0">
+            <shape type="line" name="Snowflake 3 Line 1" x="20" y="0" x2="0" y2="50" blue="255" red="255" green="255" relative="true" channel="245" />
+            <shape type="line" name="Snowflake 3 Line 2" x="30" y="0" x2="0" y2="50" blue="255" red="255" green="255" relative="true" channel="245" />
+            <shape type="line" name="Snowflake 3 Line 3" x="5" y="10" x2="40" y2="25" blue="255" red="255" green="255" relative="true" channel="245" />
+            <shape type="line" name="Snowflake 3 Line 4" x="5" y="15" x2="40" y2="25" blue="255" red="255" green="255" relative="true" channel="245" />
+            <shape type="line" name="Snowflake 3 Line 5" x="5" y="40" x2="40" y2="-25" blue="255" red="255" green="255" relative="true" channel="245" />
+            <shape type="line" name="Snowflake 3 Line 6" x="5" y="35" x2="40" y2="-25" blue="255" red="255" green="255" relative="true" channel="245" />
+        </group>
+
+        <group x="850" y="0">
+            <shape type="line" name="Snowflake 4 Line 1" x="20" y="0" x2="0" y2="50" blue="255" red="255" green="255" relative="true" channel="246" />
+            <shape type="line" name="Snowflake 4 Line 2" x="30" y="0" x2="0" y2="50" blue="255" red="255" green="255" relative="true" channel="246" />
+            <shape type="line" name="Snowflake 4 Line 3" x="5" y="10" x2="40" y2="25" blue="255" red="255" green="255" relative="true" channel="246" />
+            <shape type="line" name="Snowflake 4 Line 4" x="5" y="15" x2="40" y2="25" blue="255" red="255" green="255" relative="true" channel="246" />
+            <shape type="line" name="Snowflake 4 Line 5" x="5" y="40" x2="40" y2="-25" blue="255" red="255" green="255" relative="true" channel="246" />
+            <shape type="line" name="Snowflake 4 Line 6" x="5" y="35" x2="40" y2="-25" blue="255" red="255" green="255" relative="true" channel="246" />
+        </group>
+
+
+
+
+
 
     </elements>
 </layout>
