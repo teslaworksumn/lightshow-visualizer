@@ -4,7 +4,7 @@
     <channels count="16"/>
     <background red="75" green="75" blue="75" />
     <elements>
-        <group x="300" y="400"><!-- Cylinder is a 200x100 box -->
+        <group x="300" y="500"><!-- Cylinder is a 200x100 box -->
             <group x="0" y="0"><!-- Cylinder Red is 180x100 -->
   	            <shape type="line" name="Cylinder Red 1" x="0" y="0" x2="40" y2="100" red="255" green="0" blue="0" relative="true" channel="0" />
   	            <shape type="line" name="Cylinder Red 2" x="20" y="0" x2="40" y2="100" red="255" green="0" blue="0" relative="true" channel="1" />
@@ -47,5 +47,38 @@
             </group>
         </group>
 
+        <!-- Megatree, channels 32 - 43, 200x100 box, right above cylinder -->
+        <shape type="megatree" name="Megatree" x="300" y="400" width="200" height="100" channel="32">
+            <spoke red="0" green="0" blue="255"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="255" green="255" blue="255"/>
+            <spoke red="0" green="0" blue="255"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="255" green="255" blue="255"/>
+            <spoke red="0" green="0" blue="255"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="255" green="255" blue="255"/>
+            <spoke red="0" green="0" blue="255"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="255" green="255" blue="255"/>
+        </shape>
+
+        <!-- Big M, channels 44-47 -->
+        <group x="120" y="540">
+          <shape type="rect" name="M Green Outer Border" x="0" y="0" width="60" height="60" red="0" green="255" blue="0" fill="false" channel="44" />
+          <shape type="rect" name="M Blue Inner Border" x="5" y="5" width="50" height="50" red="0" green="0" blue="255" fill="false" channel="45" />
+
+          <!-- Red M -->
+          <shape type="text" name="M Red" x="8" y="8"
+          red="255" green="0" blue="0" font="Times New Roman"
+          fontSize="30" channel="46">  M  </shape>
+
+          <!-- Gold M -->
+          <shape type="text" name="M Gold" x="12" y="12"
+          red="255" green="215" blue="0" font="Times New Roman"
+          fontSize="30" channel="47">  M  </shape>
+        </group>
+
+        
     </elements>
 </layout>
