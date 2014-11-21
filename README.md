@@ -47,5 +47,6 @@ powerful of these machines
 | Model                     | Processor               | RAM | OS                    | Java Version        |
 | ------------------------- | ----------------------- | --- | --------------------- | ------------------  |
 | Dell Latitude E6420       | Core i7-2720QM @ 2.20GHz| 8GB | Windows 7 Enterprise  | Java 1.7 Update 67  |
-| 13" Macbook Pro Mid-2009  | Intel Core2Duo @ 2.26GHz| 8GB | Mac OS X 10.10 beta 5 | Java 1.8 Update 20  |
+| Dell Inspiron 15-5547     | Core i7-4510U @ 2.0GHz  | 8GB | Windows 8.1           | Java 1.8 Update 25  |
+| 13" Macbook Pro Mid-2009  | Intel Core2Duo @ 2.26GHz| 8GB | Mac OS X 10.10.1      | Java 1.8 Update 20  |
 | 13" Macbook Pro Retina    | Intel Core i5 @ 2.40GHz | 8GB | Mac OS X 10.9.5       | Java 1.7 Update 67  |
