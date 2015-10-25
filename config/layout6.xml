@@ -5,7 +5,7 @@
     <background red="75" green="75" blue="75" />
     <elements>
         <group x="400" y="100">
-            <shape type="fan" name="Channels 0 - 6" x="10" y="10" width="160" height="80" channel="0">
+            <shape type="fan" name="Channels 0 - 7" x="10" y="10" width="160" height="80" channel="0">
                 <spoke red="255" green="255" blue="255"/>
                 <spoke red="0" green="0" blue="255"/>
                 <spoke red="255" green="255" blue="255"/>
@@ -13,6 +13,7 @@
                 <spoke red="255" green="255" blue="255"/>
                 <spoke red="0" green="0" blue="255"/>
                 <spoke red="255" green="255" blue="255"/>
+                <spoke red="0" green="0" blue="255"/>
             </shape>
         </group>
         <shape type="rect" name="Channel 0" x="10" y="10" width="80" height="80" red="255" green="255" blue="255" fill="false" channel="0" />

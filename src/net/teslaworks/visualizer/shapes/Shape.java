@@ -38,8 +38,9 @@ public abstract class Shape {
             return new Line(e, xOffset, yOffset);
         case "arc":
             return new Arc(e, xOffset, yOffset);
-        case "fan":
-            return new Fan(e, xOffset, yOffset);
+        case "fan": // Old name for Sunburst, here just in case.
+        case "sunburst":
+            return new Sunburst(e, xOffset, yOffset);
         case "megatree":
             return new Megatree(e, xOffset, yOffset);
         }

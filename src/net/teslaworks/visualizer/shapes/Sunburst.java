@@ -8,7 +8,7 @@ import java.util.List;
 
 import org.dom4j.Element;
 
-public class Fan extends Shape {
+public class Sunburst extends Shape {
     
     private static class Spoke {
         final int channel;
@@ -33,24 +33,25 @@ public class Fan extends Shape {
     public final int originY;
     public final List<Spoke> spokes;
 
-    protected Fan(Element e, int xOffset, int yOffset) {
+    protected Sunburst(Element e, int xOffset, int yOffset) {
         super(e, xOffset, yOffset);
-        
+
         width = Integer.parseInt(e.attributeValue("width"));
         height = Integer.parseInt(e.attributeValue("height"));
-        
+
         int widthRadius = width / 2;
         originX = x + widthRadius;
         originY = y + height;
-        
+
         spokes = new ArrayList<>();
-        
+
         List<Element> spokeElements = (List<Element>) e.elements("spoke");
-        double angleSize = Math.PI / (spokeElements.size() - 1);
-        
-        for (int i = 0; i < spokeElements.size(); i++) {
+        int spokeCount = spokeElements.size();
+        double angleSize = Math.PI / (spokeCount - 1);
+
+        for (int i = 0; i < spokeCount; i++) {
             Element spokeElement = spokeElements.get(i);
-            
+
             int r = Integer.parseInt(spokeElement.attributeValue("red"));
             int g = Integer.parseInt(spokeElement.attributeValue("green"));
             int b = Integer.parseInt(spokeElement.attributeValue("blue"));
@@ -58,7 +59,7 @@ public class Fan extends Shape {
             int endX = (int) (originX + (Math.cos(angleSize * i) * widthRadius));
             int endY = (int) (originY - (Math.sin(angleSize * i) * height));
             
-            spokes.add(new Spoke(channel + i, r, g, b, endX, endY));
+            spokes.add(new Spoke(channel + spokeCount - 1 - i, r, g, b, endX, endY));
         }
     }
 
