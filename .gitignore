@@ -3,3 +3,4 @@ bin/*
 .idea/
 lightshow-visualizer.iml
 out/
+*.DS_Store

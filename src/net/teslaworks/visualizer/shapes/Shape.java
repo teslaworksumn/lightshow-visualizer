@@ -42,6 +42,8 @@ public abstract class Shape {
             return new Sunburst(e);
         case "megatree":
             return new Megatree(e);
+        case "bush":
+            return new Bush(e);
         }
         throw new IllegalArgumentException("Unknown shape type: " + e.asXML());
     }
@@ -51,21 +53,9 @@ public abstract class Shape {
         name = e.attributeValue("name");
         channel = Integer.parseInt(e.attributeValue("channel"));
 
-        int _x, _y;
-        double _rotation;
-
-        try { _x = Integer.parseInt(e.attributeValue("x")); }
-        catch (Exception r) { _x = 0; }
-
-        try { _y = Integer.parseInt(e.attributeValue("y")); }
-        catch (Exception r) { _y = 0; }
-
-        try { _rotation = Double.parseDouble(e.attributeValue("rotation")); }
-        catch (Exception r) { _rotation = 0; }
-
-        x = _x;
-        y = _y;
-        rotation = _rotation;
+        x = Integer.parseInt(e.attributeValue("x", "0"));
+        y = Integer.parseInt(e.attributeValue("y", "0"));
+        rotation = Integer.parseInt(e.attributeValue("rotation", "0"));
 
         red = Integer.parseInt(e.attributeValue("red", "255"));
         blue = Integer.parseInt(e.attributeValue("blue", "255"));

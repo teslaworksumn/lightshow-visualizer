@@ -20,21 +20,9 @@ public class Group {
         this.shapes = new ArrayList<>();
         this.subgroups = new ArrayList<>();
 
-        int _x, _y;
-        double _rotation;
-
-        try { _x = Integer.parseInt(e.attributeValue("x")); }
-        catch (Exception r) { _x = 0; }
-
-        try { _y = Integer.parseInt(e.attributeValue("y")); }
-        catch (Exception r) { _y = 0; }
-
-        try { _rotation = Double.parseDouble(e.attributeValue("rotation")); }
-        catch (Exception r) { _rotation = 0; }
-
-        x = _x;
-        y = _y;
-        rotation = _rotation;
+        x = Integer.parseInt(e.attributeValue("x", "0"));
+        y = Integer.parseInt(e.attributeValue("y", "0"));
+        rotation = Integer.parseInt(e.attributeValue("rotation", "0"));
 
         for (Element shape : (List<Element>) e.elements("shape")) {
             shapes.add(Shape.makeShape(shape));
