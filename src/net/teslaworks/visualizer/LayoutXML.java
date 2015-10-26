@@ -43,9 +43,6 @@ public class LayoutXML {
         // Change top level 'elements' to a group node.
         Element elements = (Element) layout.selectSingleNode("/layout/elements");
         elements.setQName(new QName("group"));
-        elements.addAttribute("x", "0");
-        elements.addAttribute("y", "0");
-        elements.addAttribute("rotation", "0");
 
         // The top level group containing all the shapes and subgroups
         topGroup = new Group(elements);
