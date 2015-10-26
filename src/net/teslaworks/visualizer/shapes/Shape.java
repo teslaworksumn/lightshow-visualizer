@@ -15,6 +15,7 @@ public abstract class Shape {
     // Position
     public final int x;
     public final int y;
+    public final double rotation;
 
     // Color
     public final int red;
@@ -50,8 +51,21 @@ public abstract class Shape {
         name = e.attributeValue("name");
         channel = Integer.parseInt(e.attributeValue("channel"));
 
-        x = Integer.parseInt(e.attributeValue("x"));
-        y = Integer.parseInt(e.attributeValue("y"));
+        int _x, _y;
+        double _rotation;
+
+        try { _x = Integer.parseInt(e.attributeValue("x")); }
+        catch (Exception r) { _x = 0; }
+
+        try { _y = Integer.parseInt(e.attributeValue("y")); }
+        catch (Exception r) { _y = 0; }
+
+        try { _rotation = Double.parseDouble(e.attributeValue("rotation")); }
+        catch (Exception r) { _rotation = 0; }
+
+        x = _x;
+        y = _y;
+        rotation = _rotation;
 
         red = Integer.parseInt(e.attributeValue("red", "255"));
         blue = Integer.parseInt(e.attributeValue("blue", "255"));

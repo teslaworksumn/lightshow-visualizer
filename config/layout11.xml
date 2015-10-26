@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<layout>
+    <size width="800" height="240"/>
+    <channels count="16"/>
+    <background red="75" green="75" blue="75" />
+    <elements>
+        <group x="400" y="100" rotation="-45">
+            <shape type="fan" name="Channels 0 - 6 Fan" x="10" y="10" width="160" height="80" channel="0">
+                <spoke red="255" green="255" blue="255"/>
+                <spoke red="0" green="0" blue="255"/>
+                <spoke red="255" green="255" blue="255"/>
+                <spoke red="0" green="0" blue="255"/>
+                <spoke red="255" green="255" blue="255"/>
+                <spoke red="0" green="0" blue="255"/>
+                <spoke red="255" green="255" blue="255"/>
+            </shape>
+            <shape type="megatree" name="Channels 0 - 6 Megatree" x="210" y="10" rotation="45" width="100" height="80" channel="0">
+                <spoke red="255" green="0" blue="0"/>
+                <spoke red="0" green="255" blue="0"/>
+                <spoke red="255" green="0" blue="0"/>
+                <spoke red="0" green="255" blue="0"/>
+                <spoke red="255" green="0" blue="0"/>
+                <spoke red="0" green="255" blue="0"/>
+                <spoke red="255" green="0" blue="0"/>
+            </shape>
+            <shape type="text" name="Channel 8" x="-50" y="0"
+            red="255" green="127" blue="127" font="Helvetica"
+            fontSize="30" channel="1">
+                Hello world!
+            </shape>
+        </group>
+        <shape type="rect" name="Channel 0" x="10" y="10" width="80" height="80" red="255" green="255" blue="255" fill="false" channel="0" />
+        <shape type="rect" name="Channel 1" x="100" y="10" width="80" height="80" red="0" green="255" blue="0" fill="true" channel="1" />
+        <shape type="oval" name="Channel 2" x="190" y="10" width="80" height="60" red="255" green="128" blue="0" fill="false" channel="2" />
+        <shape type="oval" name="Channel 3" x="280" y="10" width="80" height="60" red="255" green="0" blue="0" fill="true" channel="3" />
+        <shape type="oval" name="Channel 4" x="370" y="10" width="40" height="60" red="0" green="255" blue="255" fill="false" channel="4" />
+        <shape type="oval" name="Channel 5" x="460" y="10" width="40" height="60" red="255" green="0" blue="255" fill="true" channel="5" />
+        <shape type="arc" name="Channel 6" x="550" y="10" width="40" height="60" red="0" green="187" blue="0" fill="false" start="90" size="270" channel="6" />
+        <shape type="arc" name="Channel 7" x="640" y="10" width="40" height="60" red="255" green="255" blue="0" fill="true" start="90" size="90" channel="7" />
+        <shape type="arc" name="Channel 8" x="10" y="100" width="80" height="40" red="255" green="255" blue="255" fill="false" start="-90" size="90" channel="8" />
+        <shape type="rect" name="Channel 9" x="100" y="100" width="80" height="80" red="0" green="255" blue="0" fill="true" channel="9" />
+        <shape type="rect" name="Channel 10" x="190" y="100" width="80" height="80" red="255" green="128" blue="0" fill="false" channel="10" />
+        <shape type="rect" name="Channel 11" x="280" y="100" width="80" height="80" red="255" green="0" blue="0" fill="true" channel="11" />
+        <shape type="rect" name="Channel 12" x="370" y="100" width="80" height="80" red="0" green="255" blue="255" fill="false" channel="12" />
+        <shape type="rect" name="Channel 13" x="460" y="100" width="80" height="80" red="255" green="0" blue="255" fill="true" channel="13" />
+        <shape type="rect" name="Channel 14" x="550" y="100" width="80" height="80" red="0" green="187" blue="0" fill="false" channel="14" />
+        <shape type="rect" name="Channel 15" x="640" y="100" width="80" height="80" red="255" green="255" blue="0" fill="true" channel="15" />
+    </elements>
+</layout>

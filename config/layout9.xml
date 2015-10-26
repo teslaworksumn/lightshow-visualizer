@@ -251,7 +251,7 @@
         <!-- Inner Pole 1 -->
         <shape type="line" name="Inner Pole 1" x="150" y="105" x2="0" y2="90" blue="0" red="255" green="0" relative="true" channel="148" />
 
-        <!-- Fan 1 -->
+        <!-- Sunburst 1 -->
         <shape type="fan" name="Fan 1, Channels 153 - 159" x="200" y="200" width="100" height="100" channel="153">
             <spoke red="255" green="255" blue="255"/>
             <spoke red="255" green="255" blue="255"/>
@@ -290,7 +290,7 @@
             <shape type="rect" name="Bush 12 Red" x="553" y="3" width="50" height="100" red="255" green="0" blue="0" fill="true" channel="152" />
         </group>
 
-        <!-- Fan 2 -->
+        <!-- Sunburst 2 -->
         <shape type="fan" name="Fan 2, Channels 174,160-166" x="300" y="200" width="100" height="100" channel="160">
             <spoke red="255" green="0" blue="0"/>
             <spoke red="0" green="255" blue="0"/>
@@ -301,7 +301,7 @@
             <spoke red="255" green="0" blue="0"/>
         </shape>
 
-        <!-- Fan 3 -->
+        <!-- Sunburst 3 -->
         <shape type="fan" name="Fan 3, Channels 192-198" x="400" y="200" width="100" height="100" channel="192">
             <spoke red="255" green="255" blue="255"/>
             <spoke red="255" green="255" blue="255"/>
@@ -390,7 +390,7 @@
             <shape type="line" name="Inner Railing C2" x="10" y="70" x2="80" y2="0" blue="255" red="255" green="255" relative="true" channel="187" />
         </group>
 
-        <!-- Fan 4 -->
+        <!-- Sunburst 4 -->
         <shape type="fan" name="Fan 4, Channels 199-205" x="500" y="200" width="100" height="100" channel="199">
             <spoke red="255" green="0" blue="0"/>
             <spoke red="0" green="255" blue="0"/>
@@ -401,7 +401,7 @@
             <spoke red="255" green="0" blue="0"/>
         </shape>
 
-        <!-- Fan 5 -->
+        <!-- Sunburst 5 -->
         <shape type="fan" name="Fan 5, Channels 208-214" x="600" y="200" width="100" height="100" channel="208">
             <spoke red="255" green="255" blue="255"/>
             <spoke red="255" green="255" blue="255"/>
@@ -426,7 +426,7 @@
             </group>
         </group>
 
-        <!-- Fan 6 -->
+        <!-- Sunburst 6 -->
         <shape type="fan" name="Fan 6, Channels 215-221" x="700" y="200" width="100" height="100" channel="215">
             <spoke red="255" green="0" blue="0"/>
             <spoke red="0" green="255" blue="0"/>
