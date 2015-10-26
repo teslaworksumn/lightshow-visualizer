@@ -69,6 +69,6 @@ public abstract class Shape {
     // Draw this shape to the graphics2d instance
     public void paint(Graphics2D g2d, int[] channelValues) {
         g2d.setStroke(new BasicStroke(3));
-        g2d.setColor(new Color(red, green, blue, channelValues[channel]));
+        g2d.setPaint(new Color(red, green, blue, channelValues[channel]));
     }
 }

@@ -23,10 +23,10 @@ public class Rectangle extends Shape {
     public void paint(Graphics2D g2d, int[] channelValues) {
         super.paint(g2d, channelValues);
         if (fill) {
-            g2d.fillRect(x + xOffset, y + yOffset, width, height);
+            g2d.fill(new java.awt.Rectangle(x + xOffset, y + yOffset, width, height));
         }
         else {
-            g2d.drawRect(x + xOffset, y + yOffset, width, height);
+            g2d.draw(new java.awt.Rectangle(x + xOffset, y + yOffset, width, height));
         }
     }
 }
