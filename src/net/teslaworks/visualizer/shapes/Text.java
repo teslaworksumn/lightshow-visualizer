@@ -20,8 +20,7 @@ public class Text extends Shape {
     }
 
     // Draw this rectangle
-    public void paint(Graphics2D g2d, int[] channelValues) {
-        super.paint(g2d, channelValues);
+    public void paintWork(Graphics2D g2d, int[] channelValues) {
         g2d.setFont(new Font(font, Font.PLAIN, fontSize));
         g2d.drawString(value, x, y);
     }

@@ -20,8 +20,7 @@ public class Rectangle extends Shape {
     }
 
     // Draw this rectangle
-    public void paint(Graphics2D g2d, int[] channelValues) {
-        super.paint(g2d, channelValues);
+    public void paintWork(Graphics2D g2d, int[] channelValues) {
         if (fill) {
             g2d.fill(new java.awt.Rectangle(x, y, width, height));
         }

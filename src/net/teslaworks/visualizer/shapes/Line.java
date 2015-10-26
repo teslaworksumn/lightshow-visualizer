@@ -20,8 +20,7 @@ public class Line extends Shape {
     }
 
     // Draw this line
-    public void paint(Graphics2D g2d, int[] channelValues) {
-        super.paint(g2d, channelValues);
+    public void paintWork(Graphics2D g2d, int[] channelValues) {
         if (relative) {
             g2d.drawLine(x, y, x + x2, y + y2);
         }

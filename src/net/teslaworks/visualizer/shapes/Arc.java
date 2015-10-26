@@ -24,8 +24,7 @@ public class Arc extends Shape {
     }
 
     // Draw this arc
-    public void paint(Graphics2D g2d, int[] channelValues) {
-        super.paint(g2d, channelValues);
+    public void paintWork(Graphics2D g2d, int[] channelValues) {
         if (fill) {
             g2d.fillArc(x, y, width, height, start, size);
         }

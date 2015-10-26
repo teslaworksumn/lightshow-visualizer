@@ -57,8 +57,7 @@ public class Megatree extends Shape {
     }
 
     // Draw this fan
-    public void paint(Graphics2D g2d, int[] channelValues) {
-        super.paint(g2d, channelValues);
+    public void paintWork(Graphics2D g2d, int[] channelValues) {
         for (Spoke s : spokes) {
             g2d.setColor(new Color(s.red, s.green, s.blue, channelValues[s.channel]));
             g2d.drawLine(originX, y, s.endX, y + height);
