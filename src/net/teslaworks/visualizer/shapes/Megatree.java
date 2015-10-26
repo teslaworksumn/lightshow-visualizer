@@ -31,8 +31,8 @@ public class Megatree extends Shape {
     public final int originX;
     public final List<Spoke> spokes;
 
-    protected Megatree(Element e, int xOffset, int yOffset) {
-        super(e, xOffset, yOffset);
+    protected Megatree(Element e) {
+        super(e);
         
         width = Integer.parseInt(e.attributeValue("width"));
         height = Integer.parseInt(e.attributeValue("height"));
@@ -60,13 +60,8 @@ public class Megatree extends Shape {
     public void paint(Graphics2D g2d, int[] channelValues) {
         super.paint(g2d, channelValues);
         for (Spoke s : spokes) {
-            g2d.setColor(new Color(
-                    s.red, s.green, s.blue, channelValues[s.channel]));
-            g2d.drawLine(
-                    originX + xOffset,
-                    y + yOffset, 
-                    s.endX + xOffset,
-                    y + height + yOffset);
+            g2d.setColor(new Color(s.red, s.green, s.blue, channelValues[s.channel]));
+            g2d.drawLine(originX, y, s.endX, y + height);
         }
     }
 

@@ -33,8 +33,8 @@ public class Sunburst extends Shape {
     public final int originY;
     public final List<Spoke> spokes;
 
-    protected Sunburst(Element e, int xOffset, int yOffset) {
-        super(e, xOffset, yOffset);
+    protected Sunburst(Element e) {
+        super(e);
 
         width = Integer.parseInt(e.attributeValue("width"));
         height = Integer.parseInt(e.attributeValue("height"));
@@ -67,13 +67,8 @@ public class Sunburst extends Shape {
     public void paint(Graphics2D g2d, int[] channelValues) {
         super.paint(g2d, channelValues);
         for (Spoke s : spokes) {
-            g2d.setColor(new Color(
-                    s.red, s.green, s.blue, channelValues[s.channel]));
-            g2d.drawLine(
-                    originX + xOffset,
-                    originY + yOffset, 
-                    s.endX + xOffset,
-                    s.endY + yOffset);
+            g2d.setColor(new Color(s.red, s.green, s.blue, channelValues[s.channel]));
+            g2d.drawLine(originX, originY, s.endX, s.endY);
         }
     }
 

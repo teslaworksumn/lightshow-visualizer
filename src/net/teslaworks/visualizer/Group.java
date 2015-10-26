@@ -10,15 +10,12 @@ import org.dom4j.Element;
 
 public class Group {
     
-    private final int xOffset, yOffset;
     private final List<Shape> shapes;
     private final List<Group> subgroups;
     private final int x, y;
 
     @SuppressWarnings("unchecked")
-    public Group(Element e, int _xOffset, int _yOffset) {
-        this.xOffset = _xOffset;
-        this.yOffset = _yOffset;
+    public Group(Element e) {
         this.shapes = new ArrayList<>();
         this.subgroups = new ArrayList<>();
 
@@ -26,20 +23,22 @@ public class Group {
         y = Integer.parseInt(e.attributeValue("y"));
 
         for (Element shape : (List<Element>) e.elements("shape")) {
-            shapes.add(Shape.makeShape(shape, x + xOffset, y + yOffset));
+            shapes.add(Shape.makeShape(shape));
         }
         
         for (Element subgroup : (List<Element>) e.elements("group")) {
-            subgroups.add(new Group(subgroup, x + xOffset, y + yOffset));
+            subgroups.add(new Group(subgroup));
         }
     }
 
     public void paint(Graphics2D g2d, int[] channelValues) {
+        g2d.translate(x, y);
         for (Shape s : shapes) {
             s.paint(g2d, channelValues);
         }
         for (Group g : subgroups) {
             g.paint(g2d, channelValues);
         }
+        g2d.translate(0 - x, 0 - y);
     }
 }

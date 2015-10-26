@@ -12,8 +12,8 @@ public class Line extends Shape {
     public final boolean relative;
 
     // Set values unique to rectangles
-    protected Line(Element e, int xOffset, int yOffset) {
-        super(e, xOffset, yOffset);
+    protected Line(Element e) {
+        super(e);
         x2 = Integer.parseInt(e.attributeValue("x2"));
         y2 = Integer.parseInt(e.attributeValue("y2"));
         relative = Boolean.parseBoolean(e.attributeValue("relative"));
@@ -23,10 +23,10 @@ public class Line extends Shape {
     public void paint(Graphics2D g2d, int[] channelValues) {
         super.paint(g2d, channelValues);
         if (relative) {
-            g2d.drawLine(x + xOffset, y + yOffset, x + x2 + xOffset, y + y2 + yOffset);
+            g2d.drawLine(x, y, x + x2, y + y2);
         }
         else {
-            g2d.drawLine(x + xOffset, y + yOffset, x2 + xOffset, y2 + yOffset);
+            g2d.drawLine(x, y, x2, y2);
         }
     }
 }

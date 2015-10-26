@@ -15,8 +15,6 @@ public abstract class Shape {
     // Position
     public final int x;
     public final int y;
-    public final int xOffset;
-    public final int yOffset;
 
     // Color
     public final int red;
@@ -24,38 +22,36 @@ public abstract class Shape {
     public final int green;
 
     // Make a new shape from a <shape> tag in configuration
-    public static Shape makeShape(Element e, int xOffset, int yOffset) {
+    public static Shape makeShape(Element e) {
         // Switch based on "type" attribute in tag.
         String type = e.attributeValue("type");
         switch (type) {
         case "text":
-            return new Text(e, xOffset, yOffset);
+            return new Text(e);
         case "rect":
-            return new Rectangle(e, xOffset, yOffset);
+            return new Rectangle(e);
         case "oval":
-            return new Oval(e, xOffset, yOffset);
+            return new Oval(e);
         case "line":
-            return new Line(e, xOffset, yOffset);
+            return new Line(e);
         case "arc":
-            return new Arc(e, xOffset, yOffset);
+            return new Arc(e);
         case "fan": // Old name for Sunburst, here just in case.
         case "sunburst":
-            return new Sunburst(e, xOffset, yOffset);
+            return new Sunburst(e);
         case "megatree":
-            return new Megatree(e, xOffset, yOffset);
+            return new Megatree(e);
         }
         throw new IllegalArgumentException("Unknown shape type: " + e.asXML());
     }
 
     // Set values common to all shapes
-    protected Shape(Element e, int xOffset, int yOffset) {
+    protected Shape(Element e) {
         name = e.attributeValue("name");
         channel = Integer.parseInt(e.attributeValue("channel"));
 
         x = Integer.parseInt(e.attributeValue("x"));
         y = Integer.parseInt(e.attributeValue("y"));
-        this.xOffset = xOffset;
-        this.yOffset = yOffset;
 
         red = Integer.parseInt(e.attributeValue("red", "255"));
         blue = Integer.parseInt(e.attributeValue("blue", "255"));

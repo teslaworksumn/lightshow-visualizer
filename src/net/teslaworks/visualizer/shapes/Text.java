@@ -12,8 +12,8 @@ public class Text extends Shape {
     public final int fontSize;
 
     // Set values unique to rectangles
-    protected Text(Element e, int xOffset, int yOffset) {
-        super(e, xOffset, yOffset);
+    protected Text(Element e) {
+        super(e);
         value = e.getTextTrim();
         font = e.attributeValue("font", "Purisa");
         fontSize = Integer.parseInt(e.attributeValue("fontSize", "12"));
@@ -23,6 +23,6 @@ public class Text extends Shape {
     public void paint(Graphics2D g2d, int[] channelValues) {
         super.paint(g2d, channelValues);
         g2d.setFont(new Font(font, Font.PLAIN, fontSize));
-        g2d.drawString(value, x + xOffset, y + yOffset);
+        g2d.drawString(value, x, y);
     }
 }

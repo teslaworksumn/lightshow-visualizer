@@ -12,8 +12,8 @@ public class Rectangle extends Shape {
     public final boolean fill;
 
     // Set values unique to rectangles
-    protected Rectangle(Element e, int xOffset, int yOffset) {
-        super(e, xOffset, yOffset);
+    protected Rectangle(Element e) {
+        super(e);
         width = Integer.parseInt(e.attributeValue("width"));
         height = Integer.parseInt(e.attributeValue("height"));
         fill = Boolean.parseBoolean(e.attributeValue("fill"));
@@ -23,10 +23,10 @@ public class Rectangle extends Shape {
     public void paint(Graphics2D g2d, int[] channelValues) {
         super.paint(g2d, channelValues);
         if (fill) {
-            g2d.fill(new java.awt.Rectangle(x + xOffset, y + yOffset, width, height));
+            g2d.fill(new java.awt.Rectangle(x, y, width, height));
         }
         else {
-            g2d.draw(new java.awt.Rectangle(x + xOffset, y + yOffset, width, height));
+            g2d.draw(new java.awt.Rectangle(x, y, width, height));
         }
     }
 }
