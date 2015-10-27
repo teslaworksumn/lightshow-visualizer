@@ -1,9 +1,9 @@
 package net.teslaworks.visualizer;
 
 import java.awt.Color;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -11,13 +11,16 @@ import org.dom4j.Element;
 import org.dom4j.QName;
 import org.dom4j.io.SAXReader;
 
+import javax.imageio.ImageIO;
+
 public class LayoutXML {
 
     // Constants representing data from layout file
-    final public int[] channelValues;
-    final public int width, height;
-    final public Color background;
-    final public Group topGroup;
+    public final int[] channelValues;
+    public final int width, height;
+    public final Color backgroundColor;
+    public final BufferedImage backgroundImage;
+    public final Group topGroup;
 
     // Given layout filename, parses all relevant data and stores it
     public LayoutXML(File layoutFile)
@@ -38,7 +41,11 @@ public class LayoutXML {
         int bgRed = Integer.parseInt(bgElement.attributeValue("red"));
         int bgGreen = Integer.parseInt(bgElement.attributeValue("green"));
         int bgBlue = Integer.parseInt(bgElement.attributeValue("blue"));
-        background = new Color(bgRed, bgGreen, bgBlue);
+        backgroundColor = new Color(bgRed, bgGreen, bgBlue);
+
+        backgroundImage = (null == bgElement.attributeValue("image"))
+                ? null
+                : ImageIO.read(new File(bgElement.attributeValue("image")));
 
         // Change top level 'elements' to a group node.
         Element elements = (Element) layout.selectSingleNode("/layout/elements");
