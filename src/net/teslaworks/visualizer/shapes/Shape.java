@@ -44,6 +44,8 @@ public abstract class Shape {
             return new Megatree(e);
         case "bush":
             return new Bush(e);
+        case "snowflake":
+            return new Snowflake(e);
         }
         throw new IllegalArgumentException("Unknown shape type: " + e.asXML());
     }
