@@ -70,13 +70,13 @@ public abstract class Shape {
 
     // Draw this shape to the graphics2d instance
     public void paint(Graphics2D g2d, int[] channelValues) {
-        g2d.rotate(rotation, x, y);
+        g2d.rotate(Math.toRadians(rotation), x, y);
         g2d.setStroke(new BasicStroke(3));
         g2d.setPaint(new Color(red, green, blue, channelValues[channel]));
 
         paintWork(g2d, channelValues);
 
-        g2d.rotate(0 - rotation, x, y);
+        g2d.rotate(0 - Math.toRadians(rotation), x, y);
     }
 
     abstract protected void paintWork(Graphics2D g2d, int[] channelValues);
