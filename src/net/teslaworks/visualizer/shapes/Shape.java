@@ -46,6 +46,8 @@ public abstract class Shape {
             return new Bush(e);
         case "snowflake":
             return new Snowflake(e);
+        case "netlight":
+            return new NetLight(e);
         }
         throw new IllegalArgumentException("Unknown shape type: " + e.asXML());
     }
