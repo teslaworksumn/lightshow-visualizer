@@ -8,6 +8,8 @@ import org.dom4j.Element;
 
 public abstract class Shape {
 
+    public static Color TRANSPARENT = new Color(0, 0, 0, 0);
+
     // DMX
     public final String name;
     public final int channel;

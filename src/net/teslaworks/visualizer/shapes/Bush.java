@@ -8,8 +8,6 @@ import java.awt.image.BufferedImage;
 
 public class Bush extends Shape {
 
-    private static Color TRANSPARENT = new Color(0, 0, 0, 0);
-
     // Shape size
     public final int width;
     public final int height;
@@ -40,7 +38,7 @@ public class Bush extends Shape {
 
         g2d.setPaint(dualColor
                 ? new Color(red2, green2, blue2, channelValues[channel + 1])
-                : TRANSPARENT);
+                : Shape.TRANSPARENT);
         g2d.fill(new Rectangle(4, 0, 4, 4));
         g2d.fill(new Rectangle(0, 4, 4, 4));
 
