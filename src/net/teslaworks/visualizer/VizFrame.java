@@ -1,6 +1,6 @@
 package net.teslaworks.visualizer;
 
-import javax.swing.JFrame;
+import javax.swing.*;
 
 @SuppressWarnings("serial")
 public class VizFrame extends JFrame {
@@ -22,7 +22,7 @@ public class VizFrame extends JFrame {
     private void init(int width, int height) {
         setTitle("Tesla Works DMX Visualizer");
         setSize(width, height);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
     }
 }
