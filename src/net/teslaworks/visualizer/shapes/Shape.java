@@ -50,6 +50,8 @@ public abstract class Shape {
             return new Snowflake(e);
         case "netlight":
             return new NetLight(e);
+        case "snowdrummer":
+            return new Snowdrummer(e);
         }
         throw new IllegalArgumentException("Unknown shape type: " + e.asXML());
     }
