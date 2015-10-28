@@ -34,6 +34,7 @@ public class Snowdrummer extends Shape {
 
         // drum top and bottom
         g2d.drawOval(0, -3 - (height / 20), (3 * height) / 10, height / 5);
+        g2d.drawArc(0, -3 + ((3 * height) / 20), (3 * height) / 10, height / 5, 180, 180);
 
         // end drum
         g2d.translate(0 - (height / 10), 0 - ((13 * height) / 20));
