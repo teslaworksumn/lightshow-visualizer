@@ -35,14 +35,12 @@ public class Group {
 
     public void paint(Graphics2D g2d, int[] channelValues) {
         g2d.translate(x, y);
-        g2d.rotate(rotation);
-        for (Shape s : shapes) {
-            s.paint(g2d, channelValues);
-        }
-        for (Group g : subgroups) {
-            g.paint(g2d, channelValues);
-        }
-        g2d.rotate(0 - rotation);
+        g2d.rotate(Math.toRadians(rotation));
+
+        for (Shape s : shapes) s.paint(g2d, channelValues);
+        for (Group g : subgroups) g.paint(g2d, channelValues);
+
+        g2d.rotate(Math.toRadians(0 - rotation));
         g2d.translate(0 - x, 0 - y);
     }
 }
