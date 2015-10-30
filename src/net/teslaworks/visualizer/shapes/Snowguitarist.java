@@ -64,6 +64,9 @@ public class Snowguitarist extends Shape {
         g2d.rotate(Math.toRadians(-20));
 
         g2d.draw(new Rectangle(-10, 43, 30, 18));
+        g2d.drawLine(-5, 48, 60, 48);
+        g2d.drawLine(-5, 52, 60, 52);
+        g2d.drawLine(-5, 56, 60, 56);
 
         g2d.rotate(Math.toRadians(20));
     }
