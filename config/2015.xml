@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <layout>
     <size width="900" height="586"/>
-    <channels count="320"/>
+    <channels count="16"/>
     <background image="config/CivEngPlaza.png" red="75" green="75" blue="75" />
     <elements>
         <group>
-            <shape type="bush" name="Channel 0" x="0" y="0" width="90" height="90" red2="0" green2="0" blue2="255" red="255" green="255" blue="255" dual="true" channel="0" />
+            <shape type="bush" name="Channel 0" x="0" y="0" width="90" height="90" red2="0" green2="0" blue2="255" red="255" green="100" blue="100" dual="true" channel="0" />
             <shape type="rect" name="Channel 1" x="100" y="10" width="80" height="80" red="0" green="255" blue="0" fill="true" channel="1" />
             <shape type="bush" name="Channel 2" x="10" y="100" width="80" height="80" red2="0" green2="0" blue2="0" red="0" green="0" blue="0" dual="false" channel="2" />
             <shape type="rect" name="Channel 3" x="100" y="100" width="80" height="80" red="0" green="255" blue="0" fill="true" channel="3" />

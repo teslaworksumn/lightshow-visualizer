@@ -5,6 +5,8 @@ import javax.swing.SwingUtilities;
 
 public class Visualizer {
 
+    private static final boolean DEBUG = true;
+
     // File to read layout data from.
 	private static FileChooser filechooser = new FileChooser();
 
@@ -43,7 +45,7 @@ public class Visualizer {
         // Launch the display, passing the layout data
         final String targetFilename = vltarget;
         SwingUtilities.invokeLater(() -> {
-            VizFrame frame = new VizFrame(layout, targetFilename);
+            VizFrame frame = new VizFrame(layout, targetFilename, DEBUG);
             frame.setVisible(true);
         });
     }
