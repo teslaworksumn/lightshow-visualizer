@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <layout>
     <size width="900" height="586"/>
-    <channels count="16"/>
+    <channels count="320"/>
     <background image="config/CivEngPlaza.png" red="75" green="75" blue="75" />
     <elements>
         <group>

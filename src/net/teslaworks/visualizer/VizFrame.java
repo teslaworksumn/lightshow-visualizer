@@ -1,9 +1,15 @@
 package net.teslaworks.visualizer;
 
+import org.apache.commons.io.input.Tailer;
+
 import javax.swing.*;
+import java.io.File;
+import java.util.concurrent.Executors;
 
 @SuppressWarnings("serial")
 public class VizFrame extends JFrame {
+
+    private final int DELAY = 25;
 
     // Make the frame with specified configuration
     public VizFrame(LayoutXML layout, String targetFilename) {
@@ -13,9 +19,17 @@ public class VizFrame extends JFrame {
         add(new DisplayPanel(layout));
 
         // Thread to read from file and repaint frame.
-        TailListenerThread lt = new TailListenerThread(
-                targetFilename, layout.channelValues, this);
-        lt.start();
+        TailListener listener = new TailListener(layout.channelValues, this);
+        Tailer.create(new File(targetFilename), listener, DELAY, true);
+
+        Executors.newSingleThreadExecutor().execute(() -> {
+            while (true) {
+                try {
+                    Thread.sleep(DELAY);
+                } catch (InterruptedException e) {
+                }
+            }
+        });
     }
 
     // Makes the window.
