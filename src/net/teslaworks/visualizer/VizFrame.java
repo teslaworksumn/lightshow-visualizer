@@ -18,6 +18,8 @@ public class VizFrame extends JFrame {
         // Make the panel we draw to.
         add(new DisplayPanel(layout));
 
+        if (DEBUG) return;
+
         // Thread to read from file and repaint frame.
         TailListener listener = new TailListener(layout.channelValues, this);
         Tailer.create(new File(targetFilename), listener, DELAY, true);

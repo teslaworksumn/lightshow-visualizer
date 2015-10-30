@@ -1,6 +1,7 @@
 package net.teslaworks.visualizer;
 
 import java.io.File;
+import java.util.Arrays;
 import javax.swing.SwingUtilities;
 
 public class Visualizer {
@@ -47,6 +48,11 @@ public class Visualizer {
         SwingUtilities.invokeLater(() -> {
             VizFrame frame = new VizFrame(layout, targetFilename, DEBUG);
             frame.setVisible(true);
+
+            if (DEBUG) {
+                Arrays.fill(layout.channelValues, 255);
+                frame.repaint();
+            }
         });
     }
 }
