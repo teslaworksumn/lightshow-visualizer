@@ -50,6 +50,8 @@ public abstract class Shape {
             return new Snowflake(e);
         case "netlight":
             return new NetLight(e);
+        case "snowguitarist":
+            return new Snowguitarist(e);
         case "snowdrummer":
             return new Snowdrummer(e);
         }

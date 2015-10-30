@@ -5,7 +5,7 @@
     <background red="75" green="75" blue="75" />
     <elements>
         <shape type="rect" name="Channel 0" x="10" y="10" width="80" height="80" red="255" green="255" blue="255" fill="false" channel="0" />
-        <shape type="snowdrummer" name="Channel 0" x="10" y="10" height="80" red="255" green="255" blue="255" channel="0" />
+        <shape type="snowguitarist" name="Channel 0" x="10" y="10" height="80" red="255" green="255" blue="255" channel="0" />
         <shape type="rect" name="Channel 1" x="100" y="10" width="80" height="80" red="0" green="255" blue="0" fill="true" channel="1" />
         <shape type="rect" name="Channel 2" x="10" y="100" width="80" height="80" red="255" green="255" blue="255" fill="false" channel="2" />
         <shape type="rect" name="Channel 3" x="100" y="100" width="80" height="80" red="0" green="255" blue="0" fill="true" channel="3" />
