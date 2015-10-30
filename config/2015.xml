@@ -5,10 +5,13 @@
     <background image="config/CivEngPlaza.png" red="75" green="75" blue="75" />
     <elements>
         <group>
-            <shape type="bush" name="Channel 0" x="0" y="0" width="90" height="90" red2="0" green2="0" blue2="255" red="200" green="200" blue="200" dual="true" channel="0" />
-            <shape type="rect" name="Channel 1" x="100" y="10" width="80" height="80" red="0" green="255" blue="0" fill="true" channel="1" />
-            <shape type="bush" name="Channel 2" x="10" y="100" width="80" height="80" red2="0" green2="0" blue2="0" red="0" green="0" blue="0" dual="false" channel="2" />
-            <shape type="rect" name="Channel 3" x="100" y="100" width="80" height="80" red="0" green="255" blue="0" fill="true" channel="3" />
+            <!-- cylinder top bushes -->
+            <shape type="bush" x="400" y="410" width="47" height="18" rotation="-25" red="255" green="255" blue="0" red2="255" green2="0" blue2="0" dual="true" channel="0" offset="4" />
+            <shape type="bush" x="460" y="390" width="55" height="18" rotation="18" red="255" green="255" blue="0" red2="255" green2="0" blue2="0" dual="true" channel="1" offset="4" />
+            <shape type="bush" x="515" y="423" width="40" height="18" rotation="60" red="255" green="255" blue="0" red2="255" green2="0" blue2="0" dual="true" channel="2" offset="4" />
+            <shape type="bush" x="410" y="428" width="80" height="18" rotation="90" red="255" green="255" blue="0" red2="255" green2="0" blue2="0" dual="true" channel="3" offset="4" />
+            <shape type="bush" x="410" y="515" width="80" height="18" rotation="0" red="255" green="255" blue="0" red2="255" green2="0" blue2="0" dual="true" channel="3" offset="4" />
+            <shape type="bush" x="490" y="510" width="60" height="18" rotation="-60" red="255" green="255" blue="0" red2="255" green2="0" blue2="0" dual="true" channel="3" offset="4" />
         </group>
     </elements>
 </layout>

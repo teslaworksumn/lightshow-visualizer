@@ -15,6 +15,7 @@ public class Bush extends Shape {
     // Secondary colors
     public final int red2, green2, blue2;
     public final boolean dualColor;
+    private final int dualOffset;
 
     // Set values unique to rectangles
     protected Bush(Element e) {
@@ -22,6 +23,7 @@ public class Bush extends Shape {
         width = Integer.parseInt(e.attributeValue("width"));
         height = Integer.parseInt(e.attributeValue("height"));
         dualColor = Boolean.parseBoolean(e.attributeValue("dual"));
+        dualOffset = Integer.parseInt(e.attributeValue("offset", "1"));
 
         red2 = Integer.parseInt(e.attributeValue("red2"));
         green2 = Integer.parseInt(e.attributeValue("green2"));
@@ -37,7 +39,7 @@ public class Bush extends Shape {
         g2d.fill(new Rectangle(4, 4, 4, 4));
 
         g2d.setPaint(dualColor
-                ? new Color(red2, green2, blue2, channelValues[channel + 1])
+                ? new Color(red2, green2, blue2, channelValues[channel + dualOffset])
                 : Shape.TRANSPARENT);
         g2d.fill(new Rectangle(4, 0, 4, 4));
         g2d.fill(new Rectangle(0, 4, 4, 4));

@@ -60,7 +60,7 @@ public abstract class Shape {
 
     // Set values common to all shapes
     protected Shape(Element e) {
-        name = e.attributeValue("name");
+        name = e.attributeValue("name", "unnamed");
         channel = Integer.parseInt(e.attributeValue("channel"));
 
         x = Integer.parseInt(e.attributeValue("x", "0"));
