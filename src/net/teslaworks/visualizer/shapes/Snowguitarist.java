@@ -24,6 +24,7 @@ public class Snowguitarist extends Shape {
 
         paintBodyWork(g2d);
         paintGuitarWork(g2d, channelValues);
+        paintArmsWork(g2d, channelValues);
 
         g2d.scale(1, (1.0 * BASE_HEIGHT) / height);
         g2d.translate(0 - x, 0 - y);
@@ -39,24 +40,11 @@ public class Snowguitarist extends Shape {
 
     private void paintArmsWork(Graphics2D g2d, int[] channelValues) {
         // right drumming arm
-        g2d.setPaint(new Color(255, 255, 0, channelValues[channel + 1]));
-        g2d.drawLine(BASE_HEIGHT / 20, (10 * BASE_HEIGHT) / 20, (3 * BASE_HEIGHT) / 20, (7 * BASE_HEIGHT) / 20);
-        g2d.drawLine(BASE_HEIGHT / 20, (10 * BASE_HEIGHT) / 20, (3 * BASE_HEIGHT) / 20, (13 * BASE_HEIGHT) / 20);
+        g2d.setPaint(new Color(255, 255, 0, channelValues[channel + 0]));
 
-        // left drumming arm
-        g2d.setPaint(new Color(255, 255, 0, channelValues[channel + 2]));
-        g2d.drawLine((9 * BASE_HEIGHT) / 20, (10 * BASE_HEIGHT) / 20, (7 * BASE_HEIGHT) / 20, (7 * BASE_HEIGHT) / 20);
-        g2d.drawLine((9 * BASE_HEIGHT) / 20, (10 * BASE_HEIGHT) / 20, (7 * BASE_HEIGHT) / 20, (13 * BASE_HEIGHT) / 20);
-
-        // right raised arm
-        g2d.setPaint(new Color(255, 255, 0, channelValues[channel + 3]));
-        g2d.drawLine(BASE_HEIGHT / 20, (4 * BASE_HEIGHT) / 20, (3 * BASE_HEIGHT) / 20, (7 * BASE_HEIGHT) / 20);
-        g2d.drawLine(BASE_HEIGHT / 20, (4 * BASE_HEIGHT) / 20, (3 * BASE_HEIGHT) / 20, BASE_HEIGHT / 20);
-
-        // left raised arm
-        g2d.setPaint(new Color(255, 255, 0, channelValues[channel + 4]));
-        g2d.drawLine((9 * BASE_HEIGHT) / 20, (4 * BASE_HEIGHT) / 20, (7 * BASE_HEIGHT) / 20, (7 * BASE_HEIGHT) / 20);
-        g2d.drawLine((9 * BASE_HEIGHT) / 20, (4 * BASE_HEIGHT) / 20, (7 * BASE_HEIGHT) / 20, BASE_HEIGHT / 20);
+        g2d.drawLine(13, 25, 3, 38);
+        g2d.drawLine(3, 38, 20, 35);
+        g2d.drawLine(3, 38, 20, 55);
     }
 
     private void paintGuitarWork(Graphics2D g2d, int[] channelValues) {
@@ -64,9 +52,9 @@ public class Snowguitarist extends Shape {
         g2d.rotate(Math.toRadians(-20));
 
         g2d.draw(new Rectangle(-10, 43, 30, 18));
-        g2d.drawLine(-5, 48, 60, 48);
-        g2d.drawLine(-5, 52, 60, 52);
-        g2d.drawLine(-5, 56, 60, 56);
+        g2d.drawLine(-5, 48, 55, 48);
+        g2d.drawLine(-5, 52, 55, 52);
+        g2d.drawLine(-5, 56, 55, 56);
 
         g2d.rotate(Math.toRadians(20));
     }
