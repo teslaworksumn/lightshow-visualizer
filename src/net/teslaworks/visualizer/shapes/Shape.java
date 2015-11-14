@@ -48,6 +48,8 @@ public abstract class Shape {
             return new Tree(e);
         case "bush":
             return new Bush(e);
+        case "arcbush":
+            return new ArcBush(e);
         case "snowflake":
             return new Snowflake(e);
         case "netlight":

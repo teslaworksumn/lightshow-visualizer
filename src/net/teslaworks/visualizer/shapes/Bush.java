@@ -30,7 +30,7 @@ public class Bush extends Shape {
         blue2 = Integer.parseInt(e.attributeValue("blue2", "0"));
     }
 
-    private TexturePaint makeTexturePaint(int[] channelValues) {
+    protected TexturePaint makeTexturePaint(int[] channelValues) {
         BufferedImage image = new BufferedImage(8, 8, BufferedImage.TYPE_INT_ARGB);
         Graphics2D g2d = image.createGraphics();
 
