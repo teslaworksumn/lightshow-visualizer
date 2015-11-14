@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <layout>
     <size width="900" height="586"/>
-    <channels count="320"/>
-    <!--<background image="config/CivEngPlaza.png" red="75" green="75" blue="75" />-->
-    <background red="50" green="50" blue="50" />
+    <channels count="316"/>
+    <background image="config/CivEngPlaza.png" red="75" green="75" blue="75" />
+    <!--<background red="50" green="50" blue="50" />-->
     <elements>
         <!-- cylinder top bushes -->
         <shape type="bush" x="400" y="410" width="47" height="18" rotation="-25" red="255" green="255" blue="0" red2="255" green2="0" blue2="0" dual="true" channel="0" offset="4" />
@@ -17,53 +17,53 @@
         <group x="7" y="-30">
             <group x="400" y="370">
                 <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="56" />
-                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="56" />
-                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="56" />
+                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="57" />
+                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="58" />
             </group>
             <group x="415" y="370">
-                <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="56" />
-                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="56" />
-                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="56" />
+                <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="59" />
+                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="60" />
+                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="61" />
             </group>
             <group x="430" y="370">
-                <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="56" />
-                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="56" />
-                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="56" />
+                <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="62" />
+                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="63" />
+                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="64" />
             </group>
             <group x="445" y="370">
-                <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="56" />
-                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="56" />
-                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="56" />
+                <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="65" />
+                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="66" />
+                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="67" />
             </group>
             <group x="460" y="370">
-                <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="56" />
-                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="56" />
-                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="56" />
+                <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="68" />
+                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="69" />
+                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="70" />
             </group>
             <group x="475" y="370">
-                <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="56" />
-                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="56" />
-                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="56" />
+                <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="71" />
+                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="72" />
+                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="73" />
             </group>
             <group x="490" y="370">
-                <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="56" />
-                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="56" />
-                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="56" />
+                <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="74" />
+                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="75" />
+                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="76" />
             </group>
             <group x="505" y="370">
-                <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="56" />
-                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="56" />
-                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="56" />
+                <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="77" />
+                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="78" />
+                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="79" />
             </group>
             <group x="520" y="370">
-                <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="56" />
-                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="56" />
-                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="56" />
+                <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="80" />
+                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="81" />
+                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="82" />
             </group>
             <group x="535" y="370">
-                <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="56" />
-                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="56" />
-                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="56" />
+                <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="83" />
+                <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="84" />
+                <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="85" />
             </group>
         </group>
 
@@ -81,11 +81,11 @@
         </group>
 
         <!-- Snowmen -->
-        <shape type="snowguitarist" x="80" y="200" height="80" red="255" green="255" blue="255" channel="0" />
-        <shape type="snowdrummer" x="120" y="250" height="80" red="255" green="255" blue="255" channel="0" />
+        <shape type="snowguitarist" x="80" y="200" height="80" red="255" green="255" blue="255" channel="228" />
+        <shape type="snowdrummer" x="120" y="250" height="80" red="255" green="255" blue="255" channel="233" />
 
 
-        <!--Lightpoles-->
+        <!--Lightpoles 2, 4, 6, 8 -->
         <group x="250" y="95">
             <shape type="line" x="0" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
             <shape type="line" x="2" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
@@ -105,18 +105,27 @@
 
 
 
+        <!-- Trees -->
+        <shape type="tree" x="145" y="170" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
+        <shape type="tree" x="280" y="90" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
+        <shape type="tree" x="350" y="65" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
+        <shape type="tree" x="422" y="60" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
+        <shape type="tree" x="488" y="65" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
+        <shape type="tree" x="580" y="75" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
+
+
 
         <!-- Megatree -->
-        <!--<shape type="megatree" rotation="90" x="445" y="440" width="60" height="40" channel="8">-->
-            <!--<spoke red="0" green="255" blue="0"/>-->
-            <!--<spoke red="0" green="0" blue="255"/>-->
-            <!--<spoke red="255" green="0" blue="0"/>-->
-            <!--<spoke red="255" green="255" blue="255"/>-->
-            <!--<spoke red="0" green="255" blue="0"/>-->
-            <!--<spoke red="0" green="0" blue="255"/>-->
-            <!--<spoke red="255" green="0" blue="0"/>-->
-            <!--<spoke red="255" green="255" blue="255"/>-->
-        <!--</shape>-->
+        <shape type="megatree" rotation="90" x="445" y="440" width="60" height="40" channel="8">
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="0" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="255" green="255" blue="255"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="0" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="255" green="255" blue="255"/>
+        </shape>
         <shape type="megatree" rotation="180" x="482" y="460" width="60" height="40" channel="16">
             <spoke red="0" green="255" blue="0"/>
             <spoke red="0" green="0" blue="255"/>
