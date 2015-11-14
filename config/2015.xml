@@ -103,6 +103,26 @@
             <shape type="line" x="2" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
         </group>
 
+        <!-- Mini megatrees -->
+        <shape type="megatree" x="310" y="45" width="40" height="40" channel="24">
+            <spoke red="0" green="0" blue="255"/>
+            <spoke red="255" green="255" blue="255"/>
+            <spoke red="0" green="0" blue="255"/>
+            <spoke red="255" green="255" blue="255"/>
+        </shape>
+        <shape type="megatree" x="525" y="35" width="40" height="40" channel="24">
+            <spoke red="0" green="0" blue="255"/>
+            <spoke red="255" green="255" blue="255"/>
+            <spoke red="0" green="0" blue="255"/>
+            <spoke red="255" green="255" blue="255"/>
+            <spoke red="0" green="0" blue="255"/>
+        </shape>
+        <shape type="megatree" x="720" y="135" width="40" height="40" channel="24">
+            <spoke red="0" green="0" blue="255"/>
+            <spoke red="255" green="255" blue="255"/>
+            <spoke red="0" green="0" blue="255"/>
+            <spoke red="255" green="255" blue="255"/>
+        </shape>
 
 
         <!-- Trees -->
