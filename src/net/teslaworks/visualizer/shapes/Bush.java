@@ -25,9 +25,9 @@ public class Bush extends Shape {
         dualColor = Boolean.parseBoolean(e.attributeValue("dual"));
         dualOffset = Integer.parseInt(e.attributeValue("offset", "1"));
 
-        red2 = Integer.parseInt(e.attributeValue("red2"));
-        green2 = Integer.parseInt(e.attributeValue("green2"));
-        blue2 = Integer.parseInt(e.attributeValue("blue2"));
+        red2 = Integer.parseInt(e.attributeValue("red2", "0"));
+        green2 = Integer.parseInt(e.attributeValue("green2", "0"));
+        blue2 = Integer.parseInt(e.attributeValue("blue2", "0"));
     }
 
     private TexturePaint makeTexturePaint(int[] channelValues) {
