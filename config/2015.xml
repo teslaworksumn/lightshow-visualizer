@@ -81,24 +81,24 @@
         </group>
 
         <!-- Snowmen -->
-        <shape type="snowguitarist" x="80" y="200" height="80" red="255" green="255" blue="255" channel="228" />
-        <shape type="snowdrummer" x="120" y="250" height="80" red="255" green="255" blue="255" channel="233" />
+        <shape type="snowguitarist" x="60" y="200" height="80" red="255" green="255" blue="255" channel="228" />
+        <shape type="snowdrummer" x="100" y="270" height="80" red="255" green="255" blue="255" channel="233" />
 
 
         <!--Lightpoles 2, 4, 6, 8 -->
-        <group x="250" y="95">
+        <group x="250" y="80">
             <shape type="line" x="0" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
             <shape type="line" x="2" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
         </group>
-        <group x="463" y="58">
+        <group x="463" y="35">
             <shape type="line" x="0" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
             <shape type="line" x="2" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
         </group>
-        <group x="668" y="97">
+        <group x="672" y="103">
             <shape type="line" x="0" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
             <shape type="line" x="2" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
         </group>
-        <group x="790" y="230">
+        <group x="795" y="220">
             <shape type="line" x="0" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
             <shape type="line" x="2" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
         </group>
@@ -106,12 +106,16 @@
 
 
         <!-- Trees -->
-        <shape type="tree" x="145" y="170" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
+        <shape type="tree" x="145" y="190" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
         <shape type="tree" x="280" y="90" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
         <shape type="tree" x="350" y="65" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
-        <shape type="tree" x="422" y="60" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
-        <shape type="tree" x="488" y="65" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
-        <shape type="tree" x="580" y="75" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
+        <shape type="tree" x="415" y="55" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
+        <shape type="tree" x="488" y="60" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
+        <shape type="tree" x="565" y="75" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
+        <shape type="tree" x="620" y="105" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
+        <shape type="tree" x="675" y="140" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
+        <shape type="tree" x="720" y="185" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
+        <shape type="tree" x="750" y="240" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
 
 
 
@@ -164,26 +168,26 @@
 
             <!-- Snowflakes -->
             <group x="12" y="-20">
-                <shape type="snowflake" x="0" y="0" width="14" height="14" red="255" green="100" blue="100" channel="86" />
-                <shape type="snowflake" x="16" y="0" width="14" height="14" red="255" green="100" blue="100" channel="87" />
-                <shape type="snowflake" x="32" y="0" width="14" height="14" red="255" green="100" blue="100" channel="88" />
-                <shape type="snowflake" x="48" y="0" width="14" height="14" red="255" green="100" blue="100" channel="89" />
-                <shape type="snowflake" x="64" y="0" width="14" height="14" red="255" green="100" blue="100" channel="90" />
-                <shape type="snowflake" x="80" y="0" width="14" height="14" red="255" green="100" blue="100" channel="91" />
-                <shape type="snowflake" x="96" y="0" width="14" height="14" red="255" green="100" blue="100" channel="92" />
-                <shape type="snowflake" x="112" y="0" width="14" height="14" red="255" green="100" blue="100" channel="93" />
-                <shape type="snowflake" x="128" y="0" width="14" height="14" red="255" green="100" blue="100" channel="94" />
+                <shape type="snowflake" x="0" y="0" width="14" height="14" red="255" green="255" blue="255" channel="86" />
+                <shape type="snowflake" x="16" y="0" width="14" height="14" red="255" green="255" blue="255" channel="87" />
+                <shape type="snowflake" x="32" y="0" width="14" height="14" red="255" green="255" blue="255" channel="88" />
+                <shape type="snowflake" x="48" y="0" width="14" height="14" red="255" green="255" blue="255" channel="89" />
+                <shape type="snowflake" x="64" y="0" width="14" height="14" red="255" green="255" blue="255" channel="90" />
+                <shape type="snowflake" x="80" y="0" width="14" height="14" red="255" green="255" blue="255" channel="91" />
+                <shape type="snowflake" x="96" y="0" width="14" height="14" red="255" green="255" blue="255" channel="92" />
+                <shape type="snowflake" x="112" y="0" width="14" height="14" red="255" green="255" blue="255" channel="93" />
+                <shape type="snowflake" x="128" y="0" width="14" height="14" red="255" green="255" blue="255" channel="94" />
             </group>
             <group x="20" y="-40">
-                <shape type="snowflake" x="0" y="0" width="14" height="14" red="255" green="100" blue="100" channel="95" />
-                <shape type="snowflake" x="16" y="0" width="14" height="14" red="255" green="100" blue="100" channel="96" />
-                <shape type="snowflake" x="32" y="0" width="14" height="14" red="255" green="100" blue="100" channel="97" />
-                <shape type="snowflake" x="48" y="0" width="14" height="14" red="255" green="100" blue="100" channel="98" />
-                <shape type="snowflake" x="64" y="0" width="14" height="14" red="255" green="100" blue="100" channel="99" />
-                <shape type="snowflake" x="80" y="0" width="14" height="14" red="255" green="100" blue="100" channel="100" />
-                <shape type="snowflake" x="96" y="0" width="14" height="14" red="255" green="100" blue="100" channel="101" />
-                <shape type="snowflake" x="112" y="0" width="14" height="14" red="255" green="100" blue="100" channel="102" />
-                <shape type="snowflake" x="128" y="0" width="14" height="14" red="255" green="100" blue="100" channel="103" />
+                <shape type="snowflake" x="0" y="0" width="14" height="14" red="255" green="255" blue="255" channel="95" />
+                <shape type="snowflake" x="16" y="0" width="14" height="14" red="255" green="255" blue="255" channel="96" />
+                <shape type="snowflake" x="32" y="0" width="14" height="14" red="255" green="255" blue="255" channel="97" />
+                <shape type="snowflake" x="48" y="0" width="14" height="14" red="255" green="255" blue="255" channel="98" />
+                <shape type="snowflake" x="64" y="0" width="14" height="14" red="255" green="255" blue="255" channel="99" />
+                <shape type="snowflake" x="80" y="0" width="14" height="14" red="255" green="255" blue="255" channel="100" />
+                <shape type="snowflake" x="96" y="0" width="14" height="14" red="255" green="255" blue="255" channel="101" />
+                <shape type="snowflake" x="112" y="0" width="14" height="14" red="255" green="255" blue="255" channel="102" />
+                <shape type="snowflake" x="128" y="0" width="14" height="14" red="255" green="255" blue="255" channel="103" />
             </group>
         </group>
     </elements>
