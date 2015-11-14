@@ -38,19 +38,11 @@ public class NetLight extends Shape {
                 g2d.setPaint(new Color(red, green, blue, channelValues[channel + i]));
                 g2d.fill(new Rectangle(0, 4, 4, 4));
                 g2d.fill(new Rectangle(4, 0, 4, 4));
-
-                g2d.setPaint(Shape.TRANSPARENT);
-                g2d.fill(new Rectangle(0, 0, 4, 4));
-                g2d.fill(new Rectangle(4, 4, 4, 4));
             }
             else {
                 g2d.setPaint(new Color(red, green, blue, channelValues[channel + i]));
                 g2d.fill(new Rectangle(0, 0, 4, 4));
                 g2d.fill(new Rectangle(4, 4, 4, 4));
-
-                g2d.setPaint(Shape.TRANSPARENT);
-                g2d.fill(new Rectangle(0, 4, 4, 4));
-                g2d.fill(new Rectangle(4, 0, 4, 4));
             }
 
             paints[i] = new TexturePaint(image, new Rectangle(0, 0, 8, 8));

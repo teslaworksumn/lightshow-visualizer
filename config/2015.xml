@@ -183,8 +183,8 @@
 
         <!-- Addressable Net Light -->
         <group x="380" y="410" rotation="-150">
-            <shape type="netlight" reverse="false" x="0" y="0" width="10" height="12" xCount="15" yCount="3" gap="1" red="255" green="255" blue="255" channel="104" />
-            <shape type="netlight" reverse="true" x="0" y="0" width="10" height="12" xCount="15" yCount="3" gap="1" red="0" green="255" blue="0" channel="149" />
+            <shape type="netlight" reverse="false" x="0" y="0" width="10" height="12" xCount="15" yCount="3" gap="3" red="255" green="255" blue="255" channel="104" />
+            <shape type="netlight" reverse="true" x="0" y="0" width="10" height="12" xCount="15" yCount="3" gap="3" red="0" green="255" blue="0" channel="149" />
 
             <!-- Snowflakes -->
             <group x="12" y="-20">

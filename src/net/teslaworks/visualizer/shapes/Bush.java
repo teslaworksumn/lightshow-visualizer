@@ -35,14 +35,14 @@ public class Bush extends Shape {
         Graphics2D g2d = image.createGraphics();
 
         g2d.setPaint(new Color(red, green, blue, channelValues[channel]));
-        g2d.fill(new Rectangle(0, 0, 4, 4));
-        g2d.fill(new Rectangle(4, 4, 4, 4));
+        g2d.fill(new Rectangle(0, 0, 2, 2));
+        g2d.fill(new Rectangle(4, 4, 2, 2));
 
-        g2d.setPaint(dualColor
-                ? new Color(red2, green2, blue2, channelValues[channel + dualOffset])
-                : Shape.TRANSPARENT);
-        g2d.fill(new Rectangle(4, 0, 4, 4));
-        g2d.fill(new Rectangle(0, 4, 4, 4));
+        if (dualColor) {
+            g2d.setPaint(new Color(red2, green2, blue2, channelValues[channel + dualOffset]));
+            g2d.fill(new Rectangle(4, 0, 2, 2));
+            g2d.fill(new Rectangle(0, 4, 2, 2));
+        }
 
         TexturePaint paint = new TexturePaint(image, new Rectangle(0, 0, 8, 8));
         g2d.dispose();

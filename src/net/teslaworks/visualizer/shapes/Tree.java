@@ -42,10 +42,6 @@ public class Tree extends Shape {
                 : Shape.TRANSPARENT);
         g2d.fill(new Rectangle(0, 8, 16, 4));
 
-        g2d.setPaint(Shape.TRANSPARENT);
-        g2d.fill(new Rectangle(0, 4, 16, 4));
-        g2d.fill(new Rectangle(0, 12, 16, 4));
-
         TexturePaint paint = new TexturePaint(image, new Rectangle(0, 0, 16, 16));
         g2d.dispose();
 
