@@ -67,8 +67,7 @@
             </group>
         </group>
 
-
-
+        <!--Cylinder Bottom Bushes-->
         <group x="10" y="-5">
             <shape type="bush" x="400" y="370" width="20" height="20" rotation="0" red="0" green="255" blue="0" dual="false" channel="40" />
             <shape type="bush" x="425" y="370" width="20" height="20" rotation="0" red="0" green="255" blue="0" dual="false" channel="41" />
@@ -79,6 +78,27 @@
             <shape type="bush" x="500" y="370" width="20" height="20" rotation="0" red="0" green="255" blue="0" dual="false" channel="44" />
             <shape type="bush" x="525" y="370" width="20" height="20" rotation="0" red="0" green="255" blue="0" dual="false" channel="45" />
             <shape type="bush" x="550" y="370" width="20" height="20" rotation="0" red="0" green="255" blue="0" dual="false" channel="46" />
+        </group>
+
+
+
+
+        <!--Lightpoles-->
+        <group x="250" y="95">
+            <shape type="line" x="0" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
+            <shape type="line" x="2" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
+        </group>
+        <group x="463" y="58">
+            <shape type="line" x="0" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
+            <shape type="line" x="2" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
+        </group>
+        <group x="668" y="97">
+            <shape type="line" x="0" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
+            <shape type="line" x="2" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
+        </group>
+        <group x="790" y="230">
+            <shape type="line" x="0" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
+            <shape type="line" x="2" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
         </group>
 
 
