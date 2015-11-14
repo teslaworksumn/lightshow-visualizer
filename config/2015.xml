@@ -5,20 +5,11 @@
     <!--<background image="config/CivEngPlaza.png" red="75" green="75" blue="75" />-->
     <background red="100" green="100" blue="100" />
     <elements>
-        <shape type="arcbush" x="0" y="0" width="100" height="100" red="255" green="0" blue="0" red2="0" green2="0" blue2="0" dual="true" channel="0" offset="4" start="0" size="45" arcwidth="20" />
-
-
-
         <!-- cylinder top bushes -->
-        <shape type="bush" x="400" y="410" width="47" height="18" rotation="-25" red="255" green="255" blue="0" red2="255" green2="0" blue2="0" dual="true" channel="0" offset="4" />
-        <shape type="bush" x="460" y="390" width="55" height="18" rotation="18" red="255" green="255" blue="0" red2="255" green2="0" blue2="0" dual="true" channel="1" offset="4" />
-        <shape type="bush" x="515" y="423" width="40" height="18" rotation="60" red="255" green="255" blue="0" red2="255" green2="0" blue2="0" dual="true" channel="2" offset="4" />
-        <shape type="bush" x="400" y="428" width="80" height="18" rotation="90" red="255" green="255" blue="0" red2="255" green2="0" blue2="0" dual="true" channel="3" offset="4" />
-        <shape type="bush" x="410" y="515" width="80" height="18" rotation="0" red="255" green="255" blue="0" red2="255" green2="0" blue2="0" dual="true" channel="3" offset="4" />
-        <shape type="bush" x="490" y="510" width="60" height="18" rotation="-60" red="255" green="255" blue="0" red2="255" green2="0" blue2="0" dual="true" channel="3" offset="4" />
+        <shape type="arcbush" x="370" y="380" width="170" height="170" red="255" green="255" blue="0" red2="255" green2="0" blue2="0" dual="true" channel="0" offset="4" start="0" size="360" arcwidth="20" />
 
         <!-- Cylinder vertical strands -->
-        <group x="0" y="-30">
+        <group x="0" y="-40">
             <group x="400" y="370">
                 <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="56" />
                 <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="57" />
@@ -54,17 +45,17 @@
                 <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="75" />
                 <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="76" />
             </group>
-            <group x="540" y="400">
+            <group x="535" y="400">
                 <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="77" />
                 <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="78" />
                 <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="79" />
             </group>
-            <group x="560" y="415">
+            <group x="550" y="415">
                 <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="80" />
                 <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="81" />
                 <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="82" />
             </group>
-            <group x="580" y="430">
+            <group x="565" y="435">
                 <shape type="line" x="0" y="0" x2="0" y2="20" relative="true" red="255" green="255" blue="255" channel="83" />
                 <shape type="line" x="5" y="0" x2="0" y2="20" relative="true" red="0" green="0" blue="255" channel="84" />
                 <shape type="line" x="7" y="0" x2="0" y2="20" relative="true" red="0" green="255" blue="0" channel="85" />
@@ -72,13 +63,13 @@
         </group>
 
         <!--Cylinder Bottom Bushes-->
-        <group x="10" y="-5">
+        <group x="10" y="-15">
             <shape type="bush" x="400" y="370" width="20" height="20" rotation="0" red="0" green="255" blue="0" dual="false" channel="40" />
             <shape type="bush" x="425" y="370" width="20" height="20" rotation="0" red="0" green="255" blue="0" dual="false" channel="41" />
             <shape type="bush" x="450" y="370" width="20" height="20" rotation="0" red="0" green="255" blue="0" dual="false" channel="42" />
             <shape type="bush" x="475" y="370" width="20" height="20" rotation="0" red="0" green="255" blue="0" dual="false" channel="43" />
         </group>
-        <group x="430" y="-240" rotation="45">
+        <group x="540" y="-255" rotation="55">
             <shape type="bush" x="500" y="370" width="20" height="20" rotation="0" red="0" green="255" blue="0" dual="false" channel="44" />
             <shape type="bush" x="525" y="370" width="20" height="20" rotation="0" red="0" green="255" blue="0" dual="false" channel="45" />
             <shape type="bush" x="550" y="370" width="20" height="20" rotation="0" red="0" green="255" blue="0" dual="false" channel="46" />
