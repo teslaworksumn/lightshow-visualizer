@@ -2,8 +2,8 @@
 <layout>
     <size width="900" height="586"/>
     <channels count="320"/>
-    <background image="config/CivEngPlaza.png" red="75" green="75" blue="75" />
-    <!--<background red="50" green="50" blue="50" />-->
+    <!--<background image="config/CivEngPlaza.png" red="75" green="75" blue="75" />-->
+    <background red="50" green="50" blue="50" />
     <elements>
         <!-- cylinder top bushes -->
         <shape type="bush" x="400" y="410" width="47" height="18" rotation="-25" red="255" green="255" blue="0" red2="255" green2="0" blue2="0" dual="true" channel="0" offset="4" />
@@ -80,7 +80,9 @@
             <shape type="bush" x="550" y="370" width="20" height="20" rotation="0" red="0" green="255" blue="0" dual="false" channel="46" />
         </group>
 
-
+        <!-- Snowmen -->
+        <shape type="snowguitarist" x="80" y="200" height="80" red="255" green="255" blue="255" channel="0" />
+        <shape type="snowdrummer" x="120" y="250" height="80" red="255" green="255" blue="255" channel="0" />
 
 
         <!--Lightpoles-->
@@ -105,45 +107,44 @@
 
 
         <!-- Megatree -->
-        <shape type="megatree" x="425" y="470" width="60" height="40" channel="8">
-            <!--<spoke red="200" green="200" blue="200"/>-->
-            <spoke red="255" green="0" blue="0"/>
+        <!--<shape type="megatree" rotation="90" x="445" y="440" width="60" height="40" channel="8">-->
+            <!--<spoke red="0" green="255" blue="0"/>-->
+            <!--<spoke red="0" green="0" blue="255"/>-->
+            <!--<spoke red="255" green="0" blue="0"/>-->
+            <!--<spoke red="255" green="255" blue="255"/>-->
+            <!--<spoke red="0" green="255" blue="0"/>-->
+            <!--<spoke red="0" green="0" blue="255"/>-->
+            <!--<spoke red="255" green="0" blue="0"/>-->
+            <!--<spoke red="255" green="255" blue="255"/>-->
+        <!--</shape>-->
+        <shape type="megatree" rotation="180" x="482" y="460" width="60" height="40" channel="16">
             <spoke red="0" green="255" blue="0"/>
             <spoke red="0" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="0"/>
             <spoke red="255" green="255" blue="255"/>
-            <spoke red="255" green="0" blue="0"/>
             <spoke red="0" green="255" blue="0"/>
             <spoke red="0" green="0" blue="255"/>
-            <spoke red="255" green="255" blue="255"/>
-        </shape>
-        <shape type="megatree" rotation="90" x="445" y="440" width="60" height="40" channel="16">
             <spoke red="255" green="0" blue="0"/>
-            <spoke red="0" green="255" blue="0"/>
-            <spoke red="0" green="0" blue="255"/>
-            <spoke red="255" green="255" blue="255"/>
-            <spoke red="255" green="0" blue="0"/>
-            <spoke red="0" green="255" blue="0"/>
-            <spoke red="0" green="0" blue="255"/>
-            <spoke red="255" green="255" blue="255"/>
-        </shape>
-        <shape type="megatree" rotation="180" x="482" y="460" width="60" height="40" channel="24">
-            <spoke red="255" green="0" blue="0"/>
-            <spoke red="0" green="255" blue="0"/>
-            <spoke red="0" green="0" blue="255"/>
-            <spoke red="255" green="255" blue="255"/>
-            <spoke red="255" green="0" blue="0"/>
-            <spoke red="0" green="255" blue="0"/>
-            <spoke red="0" green="0" blue="255"/>
             <spoke red="255" green="255" blue="255"/>
         </shape>
-        <shape type="megatree" rotation="270" x="460" y="500" width="60" height="40" channel="32">
-            <spoke red="255" green="0" blue="0"/>
+        <shape type="megatree" rotation="270" x="460" y="500" width="60" height="40" channel="24">
             <spoke red="0" green="255" blue="0"/>
             <spoke red="0" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="0"/>
             <spoke red="255" green="255" blue="255"/>
-            <spoke red="255" green="0" blue="0"/>
             <spoke red="0" green="255" blue="0"/>
             <spoke red="0" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="255" green="255" blue="255"/>
+        </shape>
+        <shape type="megatree" x="425" y="470" width="60" height="40" channel="32">
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="0" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="255" green="255" blue="255"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="0" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="0"/>
             <spoke red="255" green="255" blue="255"/>
         </shape>
 
