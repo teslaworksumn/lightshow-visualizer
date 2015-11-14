@@ -3,7 +3,7 @@
     <size width="900" height="586"/>
     <channels count="316"/>
     <!--<background image="config/CivEngPlaza.png" red="75" green="75" blue="75" />-->
-    <background red="50" green="50" blue="50" />
+    <background red="100" green="100" blue="100" />
     <elements>
         <!-- cylinder top bushes -->
         <shape type="bush" x="400" y="410" width="47" height="18" rotation="-25" red="255" green="255" blue="0" red2="255" green2="0" blue2="0" dual="true" channel="0" offset="4" />
@@ -106,16 +106,16 @@
 
 
         <!-- Trees -->
-        <shape type="tree" x="145" y="190" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
-        <shape type="tree" x="280" y="90" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
-        <shape type="tree" x="350" y="65" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
-        <shape type="tree" x="415" y="55" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
-        <shape type="tree" x="488" y="60" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
-        <shape type="tree" x="565" y="75" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
-        <shape type="tree" x="620" y="105" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
-        <shape type="tree" x="675" y="140" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
-        <shape type="tree" x="720" y="185" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
-        <shape type="tree" x="750" y="240" width="40" height="40" red="0" green="255" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="194" offset="1" />
+        <shape type="tree" x="145" y="190" width="40" height="40" red="255" green="255" blue="255" red2="0" green2="255" blue2="0" dual="true" channel="194" offset="1" />
+        <shape type="tree" x="280" y="90" width="40" height="40" red="255" green="255" blue="255" red2="0" green2="0" blue2="255" dual="true" channel="196" offset="1" />
+        <shape type="tree" x="350" y="65" width="40" height="40" red="255" green="255" blue="255" red2="0" green2="255" blue2="0" dual="true" channel="198" offset="1" />
+        <shape type="tree" x="415" y="55" width="40" height="40" red="255" green="255" blue="255" red2="0" green2="0" blue2="255" dual="true" channel="200" offset="1" />
+        <shape type="tree" x="488" y="60" width="40" height="40" red="255" green="255" blue="255" red2="0" green2="255" blue2="0" dual="true" channel="202" offset="1" />
+        <shape type="tree" x="565" y="75" width="40" height="40" red="255" green="255" blue="255" red2="0" green2="0" blue2="255" dual="true" channel="204" offset="1" />
+        <shape type="tree" x="620" y="105" width="40" height="40" red="255" green="255" blue="255" red2="0" green2="255" blue2="0" dual="true" channel="206" offset="1" />
+        <shape type="tree" x="675" y="140" width="40" height="40" red="255" green="255" blue="255" red2="0" green2="0" blue2="255" dual="true" channel="208" offset="1" />
+        <shape type="tree" x="720" y="185" width="40" height="40" red="255" green="255" blue="255" red2="0" green2="255" blue2="0" dual="true" channel="210" offset="1" />
+        <shape type="tree" x="750" y="240" width="40" height="40" red="255" green="255" blue="255" red2="0" green2="0" blue2="255" dual="true" channel="212" offset="1" />
 
 
 
