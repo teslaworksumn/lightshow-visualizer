@@ -82,6 +82,13 @@
         <shape type="snowguitarist" x="60" y="200" height="80" red="255" green="255" blue="255" channel="228" />
         <shape type="snowdrummer" x="100" y="270" height="80" red="255" green="255" blue="255" channel="233" />
 
+        <!--Side Planters -->
+        <group rotation="-45" y="270" x="150">
+        <shape type="bush" x="24" y="42" width="36" height="12" rotation="0" red="255" green="0" blue="0" dual="false" channel="44" />
+        <shape type="bush" x="16" y="28" width="44" height="12" rotation="0" red="255" green="255" blue="0" dual="false" channel="44" />
+        <shape type="bush" x="8" y="14" width="52" height="12" rotation="0" red="255" green="0" blue="0" dual="false" channel="44" />
+        <shape type="bush" x="0" y="0" width="60" height="12" rotation="0" red="255" green="255" blue="0" dual="false" channel="44" />
+        </group>
 
         <!--Lightpoles 2, 4, 6, 8 -->
         <group x="250" y="80">
