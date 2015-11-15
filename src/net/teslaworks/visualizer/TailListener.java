@@ -2,6 +2,8 @@ package net.teslaworks.visualizer;
 
 import org.apache.commons.io.input.TailerListenerAdapter;
 
+import java.util.Arrays;
+
 public class TailListener extends TailerListenerAdapter {
 
     private int[] channelValues;
@@ -15,7 +17,8 @@ public class TailListener extends TailerListenerAdapter {
     // For each line, load into buffer and repaint frame.
     public void handle(String line) {
         String[] splits = line.substring(30).split(" ");
-        for (int i = 0; i < channelValues.length; i++) {
+        Arrays.fill(channelValues, 0);
+        for (int i = 0; i < splits.length; i++) {
             channelValues[i] = Integer.parseInt(splits[i], 16);
         }
         frame.repaint();
