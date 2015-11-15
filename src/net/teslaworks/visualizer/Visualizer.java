@@ -6,8 +6,6 @@ import javax.swing.SwingUtilities;
 
 public class Visualizer {
 
-    private static final boolean DEBUG = true;
-
     // File to read layout data from.
 	private static FileChooser filechooser = new FileChooser();
 
@@ -15,17 +13,23 @@ public class Visualizer {
         // Get vixen log file from command line
         String vltarget="";
         String LAYOUT_FILENAME = "";
+        boolean noInput = false;
 
         for (int i=0; i<args.length; i++) {
         	if (args[i].equals("-tf")) {
         		i++;
         		LAYOUT_FILENAME = args[i];
         	}
-        	if (args[i].equals("-vt")) {
+        	else if (args[i].equals("-vt")) {
         		i++;
         		vltarget = args[i];
         	}
+            else if (args[i].equals("--noInput")) {
+                noInput = true;
+            }
         }
+
+        final boolean NO_INPUT = noInput;
 
         if (vltarget.equals("")) {
         	System.err.println("ERROR: No Vixen target file specified. Exiting");
@@ -46,10 +50,10 @@ public class Visualizer {
         // Launch the display, passing the layout data
         final String targetFilename = vltarget;
         SwingUtilities.invokeLater(() -> {
-            VizFrame frame = new VizFrame(layout, targetFilename, DEBUG);
+            VizFrame frame = new VizFrame(layout, targetFilename, NO_INPUT);
             frame.setVisible(true);
 
-            if (DEBUG) {
+            if (NO_INPUT) {
                 Arrays.fill(layout.channelValues, 255);
                 frame.repaint();
             }

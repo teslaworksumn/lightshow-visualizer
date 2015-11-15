@@ -12,13 +12,13 @@ public class VizFrame extends JFrame {
     private final int DELAY = 25;
 
     // Make the frame with specified configuration
-    public VizFrame(LayoutXML layout, String targetFilename, final boolean DEBUG) {
+    public VizFrame(LayoutXML layout, String targetFilename, boolean noInput) {
         init(layout.width, layout.height);
 
         // Make the panel we draw to.
         add(new DisplayPanel(layout));
 
-        if (DEBUG) return;
+        if (noInput) return;
 
         // Thread to read from file and repaint frame.
         TailListener listener = new TailListener(layout.channelValues, this);
