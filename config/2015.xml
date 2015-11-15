@@ -90,6 +90,93 @@
         <shape type="bush" x="0" y="0" width="60" height="12" rotation="0" red="255" green="255" blue="0" dual="false" channel="44" />
         </group>
 
+
+        <!--Sunbursts-->
+        <shape type="sunburst" x="330" y="130" width="50" height="25" channel="153">
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+        </shape>
+        <shape type="sunburst" x="380" y="110" width="50" height="25" channel="153">
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="0" green="255" blue="0"/>
+        </shape>
+        <shape type="sunburst" x="450" y="110" width="50" height="25" channel="153">
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+        </shape>
+        <shape type="sunburst" x="510" y="110" width="50" height="25" channel="153">
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="0" green="255" blue="0"/>
+        </shape>
+        <shape type="sunburst" x="565" y="130" width="50" height="25" channel="153">
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="0" green="255" blue="0"/>
+        </shape>
+        <shape type="sunburst" x="620" y="150" width="50" height="25" channel="153">
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+        </shape>
+        <shape type="sunburst" x="660" y="190" width="50" height="25" channel="153">
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="0" green="255" blue="0"/>
+            <spoke red="255" green="0" blue="0"/>
+            <spoke red="0" green="255" blue="0"/>
+        </shape>
+        <shape type="sunburst" x="700" y="245" width="50" height="25" channel="153">
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+            <spoke red="255" green="0" blue="255"/>
+        </shape>
+
+
+
+
+
         <!--Lightpoles 2, 4, 6, 8 -->
         <group x="250" y="80">
             <shape type="line" x="0" y="0" x2="0" y2="40" relative="true" red="0" green="0" blue="255" channel="214" />
