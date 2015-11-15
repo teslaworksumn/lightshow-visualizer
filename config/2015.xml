@@ -90,6 +90,9 @@
         <shape type="bush" x="0" y="0" width="60" height="12" rotation="0" red="255" green="255" blue="0" dual="false" channel="44" />
         </group>
 
+        <!-- Garden bushes -->
+        <shape type="bush" x="285" y="170" width="50" height="20" red="0" green="255" blue="0" red2="0" green2="0" blue2="255" dual="true" channel="0" offset="1" />
+        <shape type="bush" x="340" y="165" width="50" height="20" red="255" green="0" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="0" offset="1" />
 
         <!--Sunbursts-->
         <shape type="sunburst" x="330" y="130" width="50" height="25" channel="153">
