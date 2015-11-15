@@ -94,6 +94,11 @@
         <shape type="bush" x="285" y="170" width="50" height="20" red="0" green="255" blue="0" red2="0" green2="0" blue2="255" dual="true" channel="0" offset="1" />
         <shape type="bush" x="340" y="165" width="50" height="20" red="255" green="0" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="0" offset="1" />
 
+        <!-- Planter bushes -->
+        <shape type="arcbush" x="200" y="185" width="500" height="500" red="255" green="0" blue="0" red2="0" green2="0" blue2="255" dual="true" channel="0" offset="4" start="90" size="25" arcwidth="20" />
+        <shape type="arcbush" x="185" y="170" width="530" height="530" red="255" green="0" blue="0" red2="255" green2="255" blue2="255" dual="true" channel="0" offset="4" start="59" size="27" arcwidth="20" />
+        <shape type="arcbush" x="230" y="170" width="500" height="500" red="255" green="0" blue="0" red2="255" green2="255" blue2="0" dual="true" channel="0" offset="4" start="28" size="29" arcwidth="20" />
+
         <!--Sunbursts-->
         <shape type="sunburst" x="330" y="130" width="50" height="25" channel="153">
             <spoke red="255" green="255" blue="255"/>
