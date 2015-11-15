@@ -44,6 +44,8 @@ public abstract class Shape {
             return new Sunburst(e);
         case "megatree":
             return new Megatree(e);
+        case "roundmegatree":
+            return new RoundMegatree(e);
         case "tree":
             return new Tree(e);
         case "bush":
