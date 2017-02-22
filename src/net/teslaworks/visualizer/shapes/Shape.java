@@ -50,6 +50,8 @@ public abstract class Shape {
             return new Tree(e);
         case "bush":
             return new Bush(e);
+        case "quadbush":
+            return new QuadBush(e);
         case "arcbush":
             return new ArcBush(e);
         case "snowflake":
@@ -60,6 +62,8 @@ public abstract class Shape {
             return new Snowguitarist(e);
         case "snowdrummer":
             return new Snowdrummer(e);
+        case "sun":
+            return new Sun(e);
         }
         throw new IllegalArgumentException("Unknown shape type: " + e.asXML());
     }
