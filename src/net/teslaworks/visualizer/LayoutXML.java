@@ -29,9 +29,7 @@ public class LayoutXML {
 
         // Channel count
         Element channels = (Element) layout.selectSingleNode("/layout/channels");
-        //System.out.printf("\n%s\n\n\n", channels.attributeValue("count"));
         channelValues = new int[Integer.parseInt(channels.attributeValue("count"))];
-        //channelValues = new int[512];
 
         // Window size and color
         Element sizeElement = (Element) layout.selectSingleNode("/layout/size");
