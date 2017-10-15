@@ -9,67 +9,67 @@ import java.util.List;
 import org.dom4j.Element;
 
 public class Sunburst extends Shape {
-    
-    private static class Spoke {
-        final int channel;
-        final int red, green, blue;
-        final int endX, endY;
-        
-        Spoke(int channel, int red, int green, int blue, int endX, int endY) {
-            this.channel = channel;
-            
-            this.red = red;
-            this.green = green;
-            this.blue = blue;
-            
-            this.endX = endX;
-            this.endY = endY;
-        }
-    }
 
-    public final int width;
-    public final int height;
-    public final int originX;
-    public final int originY;
-    public final List<Spoke> spokes;
+	private static class Spoke {
+		final int channel;
+		final int red, green, blue;
+		final int endX, endY;
 
-    @SuppressWarnings("unchecked")
-    protected Sunburst(Element e) {
-        super(e);
+		Spoke(int channel, int red, int green, int blue, int endX, int endY) {
+			this.channel = channel;
 
-        width = Integer.parseInt(e.attributeValue("width"));
-        height = Integer.parseInt(e.attributeValue("height"));
+			this.red = red;
+			this.green = green;
+			this.blue = blue;
 
-        int widthRadius = width / 2;
-        originX = x + widthRadius;
-        originY = y + height;
+			this.endX = endX;
+			this.endY = endY;
+		}
+	}
 
-        spokes = new ArrayList<>();
+	public final int width;
+	public final int height;
+	public final int originX;
+	public final int originY;
+	public final List<Spoke> spokes;
 
-        List<Element> spokeElements = (List<Element>) e.elements("spoke");
-        int spokeCount = spokeElements.size();
-        double angleSize = Math.PI / (spokeCount - 1);
+	@SuppressWarnings("unchecked")
+	protected Sunburst(Element e) {
+		super(e);
 
-        for (int i = 0; i < spokeCount; i++) {
-            Element spokeElement = spokeElements.get(i);
+		width = Integer.parseInt(e.attributeValue("width"));
+		height = Integer.parseInt(e.attributeValue("height"));
 
-            int r = Integer.parseInt(spokeElement.attributeValue("red"));
-            int g = Integer.parseInt(spokeElement.attributeValue("green"));
-            int b = Integer.parseInt(spokeElement.attributeValue("blue"));
+		int widthRadius = width / 2;
+		originX = x + widthRadius;
+		originY = y + height;
 
-            int endX = (int) (originX + (Math.cos(angleSize * i) * widthRadius));
-            int endY = (int) (originY - (Math.sin(angleSize * i) * height));
-            
-            spokes.add(new Spoke(channel + spokeCount - 1 - i, r, g, b, endX, endY));
-        }
-    }
+		spokes = new ArrayList<>();
 
-    // Draw this fan
-    public void paintWork(Graphics2D g2d, int[] channelValues) {
-        for (Spoke s : spokes) {
-            g2d.setColor(new Color(s.red, s.green, s.blue, channelValues[s.channel]));
-            g2d.drawLine(originX, originY, s.endX, s.endY);
-        }
-    }
+		List<Element> spokeElements = (List<Element>) e.elements("spoke");
+		int spokeCount = spokeElements.size();
+		double angleSize = Math.PI / (spokeCount - 1);
+
+		for (int i = 0; i < spokeCount; i++) {
+			Element spokeElement = spokeElements.get(i);
+
+			int r = Integer.parseInt(spokeElement.attributeValue("red"));
+			int g = Integer.parseInt(spokeElement.attributeValue("green"));
+			int b = Integer.parseInt(spokeElement.attributeValue("blue"));
+
+			int endX = (int) (originX + (Math.cos(angleSize * i) * widthRadius));
+			int endY = (int) (originY - (Math.sin(angleSize * i) * height));
+
+			spokes.add(new Spoke(channel + spokeCount - 1 - i, r, g, b, endX, endY));
+		}
+	}
+
+	// Draw this fan
+	public void paintWork(Graphics2D g2d, int[] channelValues) {
+		for (Spoke s : spokes) {
+			g2d.setColor(new Color(s.red, s.green, s.blue, channelValues[s.channel]));
+			g2d.drawLine(originX, originY, s.endX, s.endY);
+		}
+	}
 
 }

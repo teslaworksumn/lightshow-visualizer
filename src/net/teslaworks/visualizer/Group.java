@@ -9,38 +9,40 @@ import net.teslaworks.visualizer.shapes.Shape;
 import org.dom4j.Element;
 
 public class Group {
-    
-    private final List<Shape> shapes;
-    private final List<Group> subgroups;
-    private final int x, y;
-    private final double rotation;
 
-    @SuppressWarnings("unchecked")
-    public Group(Element e) {
-        this.shapes = new ArrayList<>();
-        this.subgroups = new ArrayList<>();
+	private final List<Shape> shapes;
+	private final List<Group> subgroups;
+	private final int x, y;
+	private final double rotation;
 
-        x = Integer.parseInt(e.attributeValue("x", "0"));
-        y = Integer.parseInt(e.attributeValue("y", "0"));
-        rotation = Integer.parseInt(e.attributeValue("rotation", "0"));
+	@SuppressWarnings("unchecked")
+	public Group(Element e) {
+		this.shapes = new ArrayList<>();
+		this.subgroups = new ArrayList<>();
 
-        for (Element shape : (List<Element>) e.elements("shape")) {
-            shapes.add(Shape.makeShape(shape));
-        }
-        
-        for (Element subgroup : (List<Element>) e.elements("group")) {
-            subgroups.add(new Group(subgroup));
-        }
-    }
+		x = Integer.parseInt(e.attributeValue("x", "0"));
+		y = Integer.parseInt(e.attributeValue("y", "0"));
+		rotation = Integer.parseInt(e.attributeValue("rotation", "0"));
 
-    public void paint(Graphics2D g2d, int[] channelValues) {
-        g2d.translate(x, y);
-        g2d.rotate(Math.toRadians(rotation));
+		for (Element shape : (List<Element>) e.elements("shape")) {
+			shapes.add(Shape.makeShape(shape));
+		}
 
-        for (Shape s : shapes) s.paint(g2d, channelValues);
-        for (Group g : subgroups) g.paint(g2d, channelValues);
+		for (Element subgroup : (List<Element>) e.elements("group")) {
+			subgroups.add(new Group(subgroup));
+		}
+	}
 
-        g2d.rotate(Math.toRadians(0 - rotation));
-        g2d.translate(0 - x, 0 - y);
-    }
+	public void paint(Graphics2D g2d, int[] channelValues) {
+		g2d.translate(x, y);
+		g2d.rotate(Math.toRadians(rotation));
+
+		for (Shape s : shapes)
+			s.paint(g2d, channelValues);
+		for (Group g : subgroups)
+			g.paint(g2d, channelValues);
+
+		g2d.rotate(Math.toRadians(0 - rotation));
+		g2d.translate(0 - x, 0 - y);
+	}
 }
