@@ -26,9 +26,9 @@ public class Visualizer {
 				noInput = true;
 			}
 		}
-
+		
 		//final boolean NO_INPUT = noInput;
-		final boolean NO_INPUT = true; // just for setting up visualizer
+		final boolean NO_INPUT = true;
 
 		if (vltarget.equals("")) {
 			System.err.println("ERROR: No Vixen target file specified. Exiting");

@@ -6,29 +6,30 @@ import org.dom4j.Element;
 
 public class Arc extends Shape {
 
-	// Shape size
-	public final int width;
-	public final int height;
-	public final int start;
-	public final int size;
-	public final boolean fill;
+    // Shape size
+    public final int width;
+    public final int height;
+    public final int start;
+    public final int size;
+    public final boolean fill;
 
-	// Set values unique to rectangles
-	protected Arc(Element e) {
-		super(e);
-		width = Integer.parseInt(e.attributeValue("width"));
-		height = Integer.parseInt(e.attributeValue("height"));
-		start = Integer.parseInt(e.attributeValue("start"));
-		size = Integer.parseInt(e.attributeValue("size"));
-		fill = Boolean.parseBoolean(e.attributeValue("fill"));
-	}
+    // Set values unique to rectangles
+    protected Arc(Element e) {
+        super(e);
+        width = Integer.parseInt(e.attributeValue("width"));
+        height = Integer.parseInt(e.attributeValue("height"));
+        start = Integer.parseInt(e.attributeValue("start"));
+        size = Integer.parseInt(e.attributeValue("size"));
+        fill = Boolean.parseBoolean(e.attributeValue("fill"));
+    }
 
-	// Draw this arc
-	public void paintWork(Graphics2D g2d, int[] channelValues) {
-		if (fill) {
-			g2d.fillArc(x, y, width, height, start, size);
-		} else {
-			g2d.drawArc(x, y, width, height, start, size);
-		}
-	}
+    // Draw this arc
+    public void paintWork(Graphics2D g2d, int[] channelValues) {
+        if (fill) {
+            g2d.fillArc(x, y, width, height, start, size);
+        }
+        else {
+            g2d.drawArc(x, y, width, height, start, size);
+        }
+    }
 }

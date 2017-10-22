@@ -7,7 +7,6 @@ import org.dom4j.Element;
 public class Cog extends Shape {
 	
 	public final int width;
-	
 	public final int red2, green2, blue2;
 	
 	protected Cog(Element e) {

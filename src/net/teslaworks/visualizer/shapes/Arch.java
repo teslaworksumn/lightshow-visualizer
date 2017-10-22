@@ -5,7 +5,6 @@ import java.awt.Color;
 import org.dom4j.Element;
 import java.util.ArrayList;
 import java.util.List;
-//import java.util.Random;
 
 public class Arch extends Shape {
 	
@@ -23,10 +22,7 @@ public class Arch extends Shape {
 		}
 	}
 	
-	//Random rnd = new Random();
-	
 	public final int SEMI_CIRCLE_DEG = 180;
-	public final int GAP = 25; // might not need
 	public final int width;
 	public final int height;
 	public final int sections;
@@ -41,7 +37,6 @@ public class Arch extends Shape {
 		
 		for(int i = 0; i < sections; i++) { // add each arch section
 			smallArcs.add(new SmallArc(channel + i, red, green, blue, sections));
-			//smallArcs.add(new SmallArc(channel + i, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256), sections));
 		}
 		
 	}
@@ -55,12 +50,5 @@ public class Arch extends Shape {
 			g2d.drawArc(x, y, width, height, startAngle, -s.sweepAngle);
 			startAngle -= arcAngle;
 		}
-		/*
-		for(int i = 0; i < sections; i++) {
-			System.out.println("startAngle: " + startAngle);
-			System.out.println("arcAngle: " + arcAngle);
-			g2d.drawArc(x, y, width, height, startAngle, -(arcAngle - (GAP / 3)));
-			startAngle -= arcAngle;
-		}*/
 	}
 }
